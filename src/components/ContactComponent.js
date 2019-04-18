@@ -7,7 +7,7 @@ import { lightMasterColor, linkColor } from '../appConstant';
 import { jsx, css } from '@emotion/core';
 
 export default () => {
-    return (<div>
+    return (<div css={{padding: '20px'}}>
         <ul css={{
             listStyle: 'none',
             display: 'flex',

@@ -3,6 +3,8 @@ import React from 'react';
 import { jsx, css } from '@emotion/core';
 import ContactComponent from '../components/ContactComponent';
 import { lightBlue } from '../appConstant';
+import TimelineComponent from '../components/TimelineComponent';
+import TimelineComponent2 from '../components/TimelineComponent2';
 
 const mediaMaxWidth = (width) => { return `@media (max-width: ${width}px)` }
 
@@ -42,10 +44,12 @@ export default () => (
                     margin: 0,
                 }
             }}>
-                <p><strong>Hello!</strong> I'm quite busy with so many things around. will keep update the page very very soon.</p>
-                <p>You can reach me anywhere online here.</p>
-                <ContactComponent />
+                {/* <p><strong>Hello!</strong> I'm quite busy with so many things around. will keep update the page very very soon.</p>
+                <p>You can reach me anywhere online here.</p> */}
+                {/* <TimelineComponent /> */}
+                <TimelineComponent2 />
             </div>
+            <ContactComponent />
         </div>
     </div>
 )
