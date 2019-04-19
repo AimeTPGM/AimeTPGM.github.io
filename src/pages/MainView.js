@@ -4,20 +4,17 @@ import { jsx, css } from '@emotion/core';
 import ContactComponent from '../components/ContactComponent';
 import { lightBlue } from '../appConstant';
 import TimelineComponent from '../components/TimelineComponent';
-import TimelineComponent2 from '../components/TimelineComponent2';
-
-const mediaMaxWidth = (width) => { return `@media (max-width: ${width}px)` }
+import { mediaMaxWidth } from '../util/util';
 
 export default () => (
     <div css={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100vh',
+        minHeight: '100vh',
         padding: '10px'
     }}>
         <div css={{ 
-                marginTop: '-15vh',
                 [mediaMaxWidth(768)]: {
                     marginTop: 0
                 }
@@ -26,9 +23,10 @@ export default () => (
                 <h1 css={{ 
                         color: lightBlue, fontSize: '1.2em', margin: '0 0 20px 0',
                         [mediaMaxWidth(768)]: {
-                            fontSize: '1em'
+                            fontSize: '0.8em',
+                            textAlign: 'center'
                         }
-                    }}>Aime – P.Srikaew</h1>
+                    }}>Aime P.Srikaew</h1>
             </div>
             <div css={{ 
                 padding: '40px', 
@@ -40,15 +38,16 @@ export default () => (
                 margin: '10px 0 0',
                 textAlign: 'center',
                 [mediaMaxWidth(768)]: {
+                    padding: '24px', 
                     width: 'fit-content',
                     margin: 0,
                 }
             }}>
-                {/* <p><strong>Hello!</strong> I'm quite busy with so many things around. will keep update the page very very soon.</p>
-                <p>You can reach me anywhere online here.</p> */}
-                {/* <TimelineComponent /> */}
-                <TimelineComponent2 />
+                
+                <TimelineComponent />
             </div>
+            <p><strong>Hello!</strong> I'm quite busy with so many things around. will keep update the page very very soon.</p>
+            <p>You can reach me anywhere online here.</p>
             <ContactComponent />
         </div>
     </div>

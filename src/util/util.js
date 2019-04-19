@@ -1,0 +1,1 @@
+export const mediaMaxWidth = (width) => { return `@media (max-width: ${width}px)` }
