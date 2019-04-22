@@ -42,7 +42,7 @@ class MenuComponent extends PureComponent {
                 renderComponent: () =>  { return (<div>Soon</div>); }
             },
             {
-                name: 'Recomendation',
+                name: 'Recommendation',
                 isLink: false,
                 isUmimplemented: false,
                 renderComponent: () =>  { return (<div>Soon</div>); }
