@@ -19,7 +19,7 @@ class RolesComponent extends PureComponent {
         return (
         <div css={{ background: '#0e2c4a', zIndex: 1 }}>
             <div css={{display: 'flex'}}>
-                <div css={{display: 'flex', justifyContent: 'space-around', width: '90%'}}>
+                <div css={{display: 'flex', justifyContent: 'space-around', width: '90%', [mediaMaxWidth(768)] : { width: 'calc(90% - 40px)'}}}>
                     {timelineData.map((item, i) => {
                         let divStyle = { 
                             color: 'white', 
