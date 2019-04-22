@@ -20,7 +20,8 @@ class MenuComponent extends PureComponent {
                 name: 'Me',
                 isLink: false,
                 isUmimplemented: true,
-                renderComponent: () => { return (<div>Me</div>); }
+                renderComponent: () => { return (<div><p><strong>Hello!</strong> I'm quite busy with so many things around. will keep update the page very very soon.</p>
+                <p>You can reach me anywhere here.</p></div>); }
             },
             {
                 name: 'Roles',

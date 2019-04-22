@@ -7,11 +7,10 @@ import MenuComponent from '../components/MenuComponent';
 
 export default () => (
     <div css={{
-        display: 'flex',
-        justifyContent: 'center',
         alignItems: 'center',
         minHeight: '100vh',
-        padding: '10px'
+        padding: '10px',
+        marginTop: '10vh'
     }}>
         <div css={{ 
                 [mediaMaxWidth(768)]: {
@@ -19,8 +18,6 @@ export default () => (
                 }
             }}>
             <MenuComponent />
-            <p><strong>Hello!</strong> I'm quite busy with so many things around. will keep update the page very very soon.</p>
-            <p>You can reach me anywhere online here.</p>
             <ContactComponent />
         </div>
     </div>

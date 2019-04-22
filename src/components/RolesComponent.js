@@ -6,7 +6,6 @@ import { mediaMaxWidth } from '../util/util';
 import RibbonComponent from './RibbonComponent';
 import RoleItemComponent from './RoleItemComponent';
 
-let _this;
 class RolesComponent extends PureComponent {
 
     constructor(props) {
@@ -18,7 +17,6 @@ class RolesComponent extends PureComponent {
 
     render() {
         const { activeItemIndex, data } = this.state;
-        _this = this;
         const activeItem = data[activeItemIndex];
         return (
         <div css={{ background: '#0e2c4a', zIndex: 1 }}>
@@ -53,7 +51,7 @@ class RolesComponent extends PureComponent {
                             }}>{item.startYear}</div>)
                     })}
                 </div>
-                <div css={{width: '10%'}}>
+                <div css={{width: '10%', background: 'rgba(0,0,0,0.2)'}}>
                     <RibbonComponent />
                 </div>
             </div>
@@ -76,7 +74,7 @@ class RolesComponent extends PureComponent {
     }
 
     openDescription(index) {
-        let { activeItemIndex, data } = _this.state;
+        let { activeItemIndex, data } = this.state;
         let activeItem = data[activeItemIndex];
         activeItem.experiences[index].isOpen = !activeItem.experiences[index].isOpen;
         data[activeItemIndex] = activeItem;

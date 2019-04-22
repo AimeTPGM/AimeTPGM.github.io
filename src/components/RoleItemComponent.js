@@ -48,9 +48,13 @@ class RoleItemComponent extends PureComponent {
         <div css={{ 
             display: 'flex', 
             padding: '30px 0',
+            cursor: 'pointer',
             ['&:not(:last-child)']: {
                 borderBottom: '1px solid rgba(255,255,255,0.1)'
             }
+            }}
+            onClick={() => {
+                openDescription(index);
             }}>
             <div css={{ width: '90%', textAlign: 'left', padding: '0 30px'}}>
                 <div css={{ fontWeight: '900'}}>{position}</div>
@@ -59,10 +63,7 @@ class RoleItemComponent extends PureComponent {
                 <div>{this.renderSkillSet(skillSet)}</div>
                 {!!isOpen ? <div css={{ fontSize: '0.7em', lineHeight: '1.5em'}}>{this.stringWithNewLine(description)}</div> : null}
             </div>
-            <div css={{ width: '10%', display: 'flex', alignItems: 'start', marginTop: '20px'}}
-                onClick={() => {
-                    openDescription(index);
-                }}>
+            <div css={{ width: '10%', display: 'flex', alignItems: 'start', marginTop: '20px'}}>
                 <FontAwesomeIcon css={{ cursor: 'pointer', color: '#266cb9', fontSize: '1.2em', ...getRotateArrowStyle() }} icon={faChevronRight}/> 
             </div>
         </div>)

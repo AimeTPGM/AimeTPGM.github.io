@@ -16,6 +16,7 @@ export default (props) => {
             padding: '10px',
             textAlign: 'center',
             zIndex: '1',
+            margin: 'auto',
             [mediaMaxWidth(768)]: {
                 width: 'fit-content',
                 margin: 0,
