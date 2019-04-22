@@ -3,19 +3,23 @@ import React, { PureComponent } from 'react';
 import { jsx, css } from '@emotion/core';
 import { lightBlue, masterColor } from '../appConstant';
 import { mediaMaxWidth } from '../util/util';
-import RoleItemComponent from './RoleItemComponent';
 import RibbonComponent from './RibbonComponent';
+import RoleItemComponent from './RoleItemComponent';
+
+let _this;
 class RolesComponent extends PureComponent {
 
     constructor(props) {
         super(props);
-        this.state = { activeItemIndex: 0 }
+        this.state = { activeItemIndex: 0, data: timelineData }
+        this.openDescription = this.openDescription.bind(this)
         
     }
 
     render() {
-        const { activeItemIndex } = this.state;
-        const activeItem = timelineData[activeItemIndex];
+        const { activeItemIndex, data } = this.state;
+        _this = this;
+        const activeItem = data[activeItemIndex];
         return (
         <div css={{ background: '#0e2c4a', zIndex: 1 }}>
             <div css={{display: 'flex'}}>
@@ -53,9 +57,13 @@ class RolesComponent extends PureComponent {
                     <RibbonComponent />
                 </div>
             </div>
-            {activeItem.experiences.map((item, key) => { 
+            {activeItem.experiences.map((item, index) => { 
                 return (
                 <RoleItemComponent
+                    key={index}
+                    index={index}
+                    isOpen={item.isOpen}
+                    openDescription={this.openDescription}
                     position={item.position}
                     period={item.period}
                     place={item.place}
@@ -65,6 +73,15 @@ class RolesComponent extends PureComponent {
             }
             )}
             </div>)
+    }
+
+    openDescription(index) {
+        let { activeItemIndex, data } = _this.state;
+        let activeItem = data[activeItemIndex];
+        activeItem.experiences[index].isOpen = !activeItem.experiences[index].isOpen;
+        data[activeItemIndex] = activeItem;
+        this.setState({ ...this.state, data });
+        this.forceUpdate();
     }
     
 }
@@ -81,7 +98,8 @@ const timelineData = [
                 period : "Jan 2019 - Present",
                 description : 'Frontend Refactoring Initiatives (React Native Redux Saga)\nRelease 3 Performance Testing Facilitator',
                 tools : [ 'Java', 'Spring', 'Kotlin', 'Redis', 'MySQL', 'Liquibase', 'Mockito', 'Jmeter', 'FCM', 'Cloudfoundry', 'Jenkins', 'Docker', 'Angular', 'Jasmine', 'Javascript', 'React Native', 'Redux', 'Saga', 'Jest'],
-                img : ''
+                img : '',
+                isOpen: false
             },
             {
                 position : "FullStack Developer",
@@ -89,7 +107,8 @@ const timelineData = [
                 period : "Dec 2017 - Dec 2018",
                 description : "Hexalite team is conducting Roadside Assistance Application for facilitating user client and customer of Allianz in case of car breakdown. This project is first technical launching in Austria and Germany and continuously on development to serve people all around the world. \n\nMy responsibilities and experiences as a full stack developer are listed as following: \n\n- Web application development using Angular 5 with unit testing using Jasmine and Karma\n- Mobile application development using React Native with Redux-Saga and Jest for unit testing\n- Backend capabilities development based on Microservice Architecture with Service Discovery(Eureka) using Java Spring Framework, Kotlin, Redis and MySQL with unit testing using Mockito\n- Google Firebase Cloud Messaging for forwarding notification from BE Capabilities to Mobile\n- Liquibase script implementation for database versioning\n- Environment migration from silos to Cloudfoundry\n- Jenkins ci-cd script implementation for automation deployment from checkout stage, build with unit test thru deploy artifact with versioning to nexus\n- Integrating CI/CD with notification service to notify the team in Slack for every Jenkins build process and result\n- partially integrating Sonarqube code quality gate on Backend using Jacoco plugin\n- Github Push Webhook with Jenkins automation build pipeline\n- Partially performing performance testing using Jmeter and plugins\n- Production deployment execution\n- Production Issue Investigation and Solution",
                 tools : [ 'Java', 'Spring', 'Kotlin', 'Redis', 'MySQL', 'Liquibase', 'Mockito', 'Jmeter', 'FCM', 'Cloudfoundry', 'Jenkins', 'Docker', 'Angular', 'Jasmine', 'Javascript', 'React Native', 'Redux', 'Saga', 'Jest'],
-                img : ''
+                img : '',
+                isOpen: false
             }
         ]
     },
@@ -102,7 +121,8 @@ const timelineData = [
                 period : "Sept 2016 - Aug 2017",
                 description : "Designed invitation posters and publicised news and announcements of activities for Thai students in South Korea on social media",
                 tools : [ 'Photoshop', 'Facebook', 'KakaoTalk'],
-                img : ''
+                img : '',
+                isOpen: false
             }
         ]
     },
@@ -115,7 +135,8 @@ const timelineData = [
                 period : "Sept 2015 - Aug 2017",
                 description : "Research on Microservice Architecture and full-stack developed a document management system for managing document flow in e-Government based on a module of ONNARA (real Koream e-government system) referring to Microservice Architecture including system requirement gathering, design, development, testing and deployment. Also teaching others laboratory members and interns to participate in the project through pair programming.",
                 tools : ['IONIC', 'HTML', 'CSS', 'Javascript', 'Java', 'Spring', 'Python', 'Flask', 'Docker', 'Openstack'],
-                img : ''
+                img : '',
+                isOpen: false
             },
             {
                 position : "Software Developer (Freelance)",
@@ -123,7 +144,8 @@ const timelineData = [
                 period : "Jun 2015 - Aug 2015",
                 description : "Developed a dynamic application that can run on website and mobile for sovling rubik cube in 2 mode: Solver and Tutor.",
                 tools : ['IONIC', 'HTML', 'CSS', 'Javascript'],
-                img : ''
+                img : '',
+                isOpen: false
             },
             {
                 position : "2D Game Graphic Designer (Freelance)",
@@ -131,7 +153,8 @@ const timelineData = [
                 period : "Jun 2015 - Aug 2015",
                 description : "Designed and drew 2D game graphics for 3 programming education games: Angry Penguin, Save the Corgi and Tank Battle. All are included sprites, elements, background images and logo",
                 tools : ['Photoshop'],
-                img : ''
+                img : '',
+                isOpen: false
             }
         ]
     },
@@ -144,7 +167,8 @@ const timelineData = [
                 period : "Sept 2014 - Dec 2014",
                 description : "Developed a website called Work Management Tool to manage project tasks from many country (Thailand and Korea are include) for development E-government system together, main responsibility on frontend development, sub-responsibility on backend development",
                 tools : ['Bootstrap', 'HTML', 'CSS', 'Javascript', 'CodeIgniter', 'PHP'],
-                img : ''
+                img : '',
+                isOpen: false
             }
         ]
     }

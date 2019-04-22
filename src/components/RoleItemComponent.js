@@ -7,7 +7,6 @@ import { faChevronRight, faChevronDown } from '@fortawesome/free-solid-svg-icons
 class RoleItemComponent extends PureComponent {
     constructor(props) {
         super(props);
-        this.state = { isOpenDescription: false };
     }
 
     stringWithNewLine(str) {
@@ -40,9 +39,9 @@ class RoleItemComponent extends PureComponent {
     }
 
     render() {
-        const { position, place, period, description, skillSet } = this.props;
+        const { index, position, place, period, description, skillSet, openDescription, isOpen } = this.props;
         const getRotateArrowStyle = () => {
-            if (!!this.state.isOpenDescription) return { transform: 'rotate(90deg)', transition: '0.3s'}
+            if (!!isOpen) return { transform: 'rotate(90deg)', transition: '0.3s'}
             return {  transform: 'rotate(0deg)', transition: '0.3s' }
         }
         return (
@@ -58,11 +57,11 @@ class RoleItemComponent extends PureComponent {
                 <div css={{ fontSize: '0.7em', fontStyle: 'oblique', lineHeight: '1.2em'}}>{period}</div>
                 <div css={{ fontSize: '0.7em', fontStyle: 'oblique', lineHeight: '1.2em'}}>@{place}</div>
                 <div>{this.renderSkillSet(skillSet)}</div>
-                {!!this.state.isOpenDescription ? <div css={{ fontSize: '0.7em', lineHeight: '1.5em'}}>{this.stringWithNewLine(description)}</div> : null}
+                {!!isOpen ? <div css={{ fontSize: '0.7em', lineHeight: '1.5em'}}>{this.stringWithNewLine(description)}</div> : null}
             </div>
             <div css={{ width: '10%', display: 'flex', alignItems: 'start', marginTop: '20px'}}
                 onClick={() => {
-                    this.setState({ isOpenDescription: !this.state.isOpenDescription })
+                    openDescription(index);
                 }}>
                 <FontAwesomeIcon css={{ cursor: 'pointer', color: '#266cb9', fontSize: '1.2em', ...getRotateArrowStyle() }} icon={faChevronRight}/> 
             </div>
