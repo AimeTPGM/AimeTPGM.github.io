@@ -53,8 +53,7 @@ class RoleItemComponent extends PureComponent {
                 borderBottom: '1px solid rgba(255,255,255,0.1)'
             }
             }}>
-            <div css={{ width: '20%' }}>logo</div>
-            <div css={{ width: '70%', textAlign: 'left'}}>
+            <div css={{ width: '90%', textAlign: 'left', padding: '0 30px'}}>
                 <div css={{ fontWeight: '900'}}>{position}</div>
                 <div css={{ fontSize: '0.7em', fontStyle: 'oblique', lineHeight: '1.2em'}}>{period}</div>
                 <div css={{ fontSize: '0.7em', fontStyle: 'oblique', lineHeight: '1.2em'}}>@{place}</div>
