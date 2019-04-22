@@ -24,16 +24,34 @@ class MenuComponent extends PureComponent {
                 <p>You can reach me anywhere here.</p></div>); }
             },
             {
-                name: 'Roles',
+                name: 'Education',
+                isLink: false,
+                isUmimplemented: false,
+                renderComponent: () => { return (<div>Soon</div>); }
+            },
+            {
+                name: 'Role',
                 isLink: false,
                 isUmimplemented: false,
                 renderComponent: () => { return (<RolesComponent />); }
             },
             {
+                name: 'Archievement',
+                isLink: false,
+                isUmimplemented: false,
+                renderComponent: () =>  { return (<div>Soon</div>); }
+            },
+            {
+                name: 'Recomendation',
+                isLink: false,
+                isUmimplemented: false,
+                renderComponent: () =>  { return (<div>Soon</div>); }
+            },
+            {
                 name: 'Blog',
                 isLink: false,
                 isUmimplemented: true,
-                renderComponent: () => { return (<div></div>); }
+                renderComponent: () => { return (<div>Soon</div>); }
             }
         ]
 
@@ -49,7 +67,10 @@ class MenuComponent extends PureComponent {
                     <div css={{ color: lightBlue, 
                         borderRadius: '10px', 
                         padding: '5px 20px',
-                        cursor: 'pointer'
+                        cursor: 'pointer',
+                        ['&:hover'] : {
+                            color: 'white'
+                        }
                     }}
                     onClick={() => { this.setState({ renderComponent: item.renderComponent })}}
                     >
