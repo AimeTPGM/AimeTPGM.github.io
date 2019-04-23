@@ -45,7 +45,7 @@ class RolesComponent extends PureComponent {
                             }
                         }
                         return (
-                            <div css={{...divStyle}}
+                            <div key={i} css={{...divStyle}}
                             onClick={ () => {
                                 this.setState({ activeItemIndex: i })
                             }}>{item.startYear}</div>)
