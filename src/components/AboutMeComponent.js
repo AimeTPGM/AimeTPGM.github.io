@@ -30,9 +30,8 @@ export default () => {
         <div css={{ fontSize: '0.8em', lineHeight: '1.3em', padding: '0 5vw 80px 5vw', textAlign: 'left', [mediaMaxWidth(768)]: { }}}>
             <p>I'm a <span css={{ ...textHilightStyle }}>software developer</span> from Thailand.</p>
             <p>If you ask me about my preferred specific role, I like to be <span css={{ ...textHilightStyle }}>FullStack dev</span> since we can rotate around the new area we haven't seen it yet. My heart keep beating fast when I can smell a new advanture throwing on me.</p>
-            <p>I'm in the early of real life learning and I made a promise to myself for always being better than yesterday.</p>
             <p><span css={{ ...textHilightStyle }}>I like to talk and meet with people</span>, exchange the opinions and perspectives.</p>
-            <p>Don't be so scaried. <span css={{ ...textHilightStyle }}>My contact is in the bottom of the site.</span></p>
+            <p>Don't be afraid! <span css={{ ...textHilightStyle }}>My contact is in the bottom of the site.</span></p>
             <p>Nice to see all my old friends and new faces. Let's have a little chat ;)</p>
             <p><span css={{ fontWeight: '900', color: '#ffcd40'}}>P.S. I also play some games on my free<del css={{ color: 'rgba(255, 63, 63, 0.65)'}}>day</del>time </span>(I'm also quite hardcore gamer tho :P) <span css={{ ...textHilightStyle }}>COME AND JOIN ME</span></p>
             <div css={{ display: 'flex', alignItems: 'center', justifyContent: 'center', [mediaMaxWidth(768)]: { flexDirection: 'column' }}}>
