@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/static/media/logo.5d5d9eef.svg"
   },
   {
-    "revision": "d5d2c4a6f45542825e5f86896920c754",
-    "url": "/static/media/hs-logo.d5d2c4a6.png"
+    "revision": "c01740a2f9bc373a1eda49aca3b8de51",
+    "url": "/static/media/hs-logo.c01740a2.png"
   },
   {
     "revision": "628bdc9b6b653d1efecec4694adabc77",
@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "b6832942def260e2f4f5",
-    "url": "/static/js/main.d143e790.chunk.js"
+    "revision": "abf3c585d5a487620b58",
+    "url": "/static/js/main.0c4ccb62.chunk.js"
   },
   {
     "revision": "26512f5404b91e85a6dd",
     "url": "/static/js/2.0be54c30.chunk.js"
   },
   {
-    "revision": "b6832942def260e2f4f5",
+    "revision": "abf3c585d5a487620b58",
     "url": "/static/css/main.aaf5ddb9.chunk.css"
   },
   {
-    "revision": "81f4d4be3f0c1eacb3d1785248515e2e",
+    "revision": "02ccb6d2d8f440392f5856a710133dcb",
     "url": "/index.html"
   }
 ];
