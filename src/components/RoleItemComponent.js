@@ -3,18 +3,11 @@ import React,{ PureComponent } from 'react';
 import { jsx, css } from '@emotion/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { stringWithNewLine } from '../util/util';
 
 class RoleItemComponent extends PureComponent {
     constructor(props) {
         super(props);
-    }
-
-    stringWithNewLine(str) {
-        const strs = str.split('\n')
-        return strs.map(item => {
-            return (
-                <span>{item}<br /></span>); 
-            })
     }
 
     renderSkillSet = (skillSet) => {
@@ -61,7 +54,7 @@ class RoleItemComponent extends PureComponent {
                 <div css={{ fontSize: '0.7em', fontStyle: 'oblique', lineHeight: '1.2em'}}>{period}</div>
                 <div css={{ fontSize: '0.7em', fontStyle: 'oblique', lineHeight: '1.2em'}}>@{place}</div>
                 <div>{this.renderSkillSet(skillSet)}</div>
-                {!!isOpen ? <div css={{ fontSize: '0.7em', lineHeight: '1.5em'}}>{this.stringWithNewLine(description)}</div> : null}
+                {!!isOpen ? <div css={{ fontSize: '0.7em', lineHeight: '1.5em'}}>{stringWithNewLine(description)}</div> : null}
             </div>
             <div css={{ width: '10%', display: 'flex', alignItems: 'start', marginTop: '20px'}}>
                 <FontAwesomeIcon css={{ cursor: 'pointer', color: '#266cb9', fontSize: '1.2em', ...getRotateArrowStyle() }} icon={faChevronRight}/> 

@@ -9,7 +9,7 @@ import { jsx, css } from '@emotion/core';
 class App extends Component {
   render() {
     return (
-      <div className="App" css={css`background-image: linear-gradient(to bottom right, ${lightMasterColor}, ${masterColor}); color: white;`}>
+      <div className="App" css={{backgroundImage: `linear-gradient(to bottom right, ${lightMasterColor}, ${masterColor})`, color: 'white'}}>
         <MainView />
       </div>
     );

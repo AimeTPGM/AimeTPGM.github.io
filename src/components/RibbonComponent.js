@@ -38,7 +38,7 @@ export default () => {
         css={{
           zIndex: -1,
           width: "20px",
-          height: "20px",
+          height: "10px",
           background: "#824603",
           position: "absolute",
           top: "0px",
@@ -52,7 +52,7 @@ export default () => {
       <div
         css={{
           zIndex: -1,
-          width: "20px",
+          width: "10px",
           height: "20px",
           background: "#824603",
           position: "absolute",

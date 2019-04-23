@@ -1,17 +1,17 @@
 import React, { PureComponent } from 'react';
-import RolesComponent from './RolesComponent';
 
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 import { lightBlue } from '../appConstant';
-import MainView from '../pages/MainView';
+import RolesComponent from './RolesComponent';
 import ViewContainer from '../pages/ViewContainer';
+import AboutMeComponent from './AboutMeComponent';
 
 class MenuComponent extends PureComponent {
     
     constructor(props) {
         super(props);
-        this.state = { renderComponent: () => { return <RolesComponent /> } }
+        this.state = { renderComponent: () => { return <AboutMeComponent /> } }
     }
     
     render() {
@@ -20,8 +20,7 @@ class MenuComponent extends PureComponent {
                 name: 'Me',
                 isLink: false,
                 isUmimplemented: true,
-                renderComponent: () => { return (<div><p><strong>Hello!</strong> I'm quite busy with so many things around. will keep update the page very very soon.</p>
-                <p>You can reach me anywhere here.</p></div>); }
+                renderComponent: () => { return (<AboutMeComponent />); }
             },
             {
                 name: 'Education',
