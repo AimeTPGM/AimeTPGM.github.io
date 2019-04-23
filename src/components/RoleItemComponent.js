@@ -50,7 +50,7 @@ class RoleItemComponent extends PureComponent {
                 openDescription(index);
             }}>
             <div css={{ width: '90%', textAlign: 'left', padding: '0 30px'}}>
-                <div css={{ fontWeight: '900'}}>{position}</div>
+                <div css={{ fontWeight: '900', lineHeight: '1.2em', marginBottom: '10px'}}>{position}</div>
                 <div css={{ fontSize: '0.7em', fontStyle: 'oblique', lineHeight: '1.2em'}}>{period}</div>
                 <div css={{ fontSize: '0.7em', fontStyle: 'oblique', lineHeight: '1.2em'}}>@{place}</div>
                 <div>{this.renderSkillSet(skillSet)}</div>
