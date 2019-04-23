@@ -43,15 +43,14 @@ class MenuComponent extends PureComponent {
                             borderRadius: '50px 0 0 50px'
                         },
                         ['&:last-child']: { borderRadius: '0 50px 50px 0' },
-                        
                     }}
+                    onClick={() => { this.navigateTo(key)}}
                 >
                     <div css={{
                         borderRadius: '10px', 
                         padding: '5px 20px',
                         cursor: 'pointer',
                     }}
-                    onClick={() => { this.navigateTo(key)}}
                     >
                         {item.name}
                     </div>
