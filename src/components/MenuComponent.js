@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { lightBlue, masterColor } from '../appConstant';
 import RolesComponent from './RolesComponent';
 import ViewContainer from '../pages/ViewContainer';
 import AboutMeComponent from './AboutMeComponent';
@@ -28,7 +27,6 @@ class MenuComponent extends PureComponent {
     
     render() {
         const { menu } = this.state;
-        console.log(this.state)
         return (<div>
         <div css={{ display: 'flex', justifyContent: 'center', width: 'fit-content', margin: 'auto', marginBottom: '20px', background: 'rgba(0,0,0,0.45)', borderRadius: '50px'}}>
             {menu.map((item, key) => {
