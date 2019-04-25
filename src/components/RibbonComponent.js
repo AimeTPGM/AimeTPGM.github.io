@@ -31,7 +31,7 @@ export default () => {
             fontWeight: "900",
             wordBreak: 'break-all' }}>
             <span>Volunteering</span>
-            <span>& Activities</span>
+            <span> & Activities</span>
         </div>
       </div>
       <div

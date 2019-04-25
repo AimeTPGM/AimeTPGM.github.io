@@ -2,10 +2,10 @@ import React, { PureComponent } from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 import { mediaMaxWidth } from '../util/util';
-import RibbonComponent from './RibbonComponent';
-import RoleItemComponent from './RoleItemComponent';
+import RibbonComponent from '../components/RibbonComponent';
+import RoleItemComponent from '../components/RoleItemComponent';
 
-class RolesComponent extends PureComponent {
+class RolesView extends PureComponent {
 
     constructor(props) {
         super(props);
@@ -53,7 +53,6 @@ class RolesComponent extends PureComponent {
                     <RibbonComponent />
                 </div>
             </div>
-
             {activeItem.experiences.map((item, index) => { 
                 return (
                 <RoleItemComponent 
@@ -61,7 +60,8 @@ class RolesComponent extends PureComponent {
                     place={item.place}
                     skillSet={item.tools}
                     openDescFunc={this.openDescription} 
-                    roles={item.roles} />
+                    roles={item.roles}
+                     />
                 );
             }
             )}
@@ -79,7 +79,7 @@ class RolesComponent extends PureComponent {
     
 }
 
-export default RolesComponent;
+export default RolesView;
 
 const timelineData = [
     {
