@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { lightMasterColor, linkColor } from '../appConstant';
+import { lightMasterColor, linkColor, masterHilightColor } from '../appConstant';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 
@@ -21,7 +21,7 @@ export default () => {
                 return (<li css={{ margin: '10px'}}>
                     <a css={{
                             color: linkColor,
-                            ['&:hover']: { color: 'white' }
+                            ['&:hover']: { color: masterHilightColor }
                         }} 
                         href={item.link}>
                         <FontAwesomeIcon icon={item.icon}/>
