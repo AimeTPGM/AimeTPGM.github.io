@@ -8,12 +8,13 @@ import RecommendationView from '../pages/RecommendationView';
 import { mediaMaxWidth } from '../util/util';
 import AboutMeView from '../pages/AboutMeView';
 import VolunteerAndActivityView from '../pages/VolunteerAndActivityView';
+import RolesMasterView from '../pages/RolesMasterView';
 class MenuComponent extends PureComponent {
     
     constructor(props) {
         super(props);
         this.state = { 
-            renderComponent: () => { return <VolunteerAndActivityView /> }, 
+            renderComponent: () => { return <RolesMasterView /> }, 
             activeMenuIndex: 0, 
             menu: menuData 
         }
@@ -104,7 +105,7 @@ const menuData = [
         isLink: false,
         isActive: false,
         isUnimplemented: false,
-        renderComponent: () => { return (<RolesView />); }
+        renderComponent: () => { return (<RolesMasterView />); }
     },
     {
         name: 'Archievement',

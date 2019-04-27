@@ -2,10 +2,20 @@ import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 import { stringWithNewLine, mediaMaxWidth } from '../util/util';
+import { lightMasterColor, masterColor, lightBlue } from '../appConstant';
+import RolesView from './RolesView';
 
-export default () => {
+export default (props) => {
+    const { changePageFunc } = props;
+    const rolesPage = <RolesView changePageFunc={changePageFunc} />
     return (<div>
-        <div css={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', textAlign: 'left'}}>
+        <div onClick={() => {
+            changePageFunc(rolesPage)
+        }}
+        css={{ position: 'absolute', fontSize: '0.8em',right: '30px', padding: '0 20px', background: '#0d253e', border: `1px solid ${lightMasterColor}`, color: lightBlue, transition: '0.5s', cursor: 'pointer', ['&:hover']: { background:'#1c518a', borderColor: 'white', color: 'white'}}}>
+            Back to Roles
+        </div>
+        <div css={{ paddingTop: '40px', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', textAlign: 'left'}}>
             {volunteeringAndActivityList.map((item, index) => {
                 return (
                     <div key={index} 

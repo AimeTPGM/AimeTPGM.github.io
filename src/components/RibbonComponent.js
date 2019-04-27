@@ -2,9 +2,10 @@ import React from "react";
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 
-export default () => {
+export default (props) => {
+  const { changePageFunc, pageToChange } = props;
   return (
-    <div>
+    <div onClick={() => {changePageFunc(pageToChange)}} css={{ cursor: 'pointer'}}>
       <div
         css={{
           zIndex: 2,
@@ -18,7 +19,14 @@ export default () => {
           lineHeight: "50px",
           letterSpacing: "1px",
           transform: "rotate(45deg)",
-          color: "#824603"
+          color: "#824603",
+          transition: '0.5s',
+          border: '1px solid #ab7600',
+          ['&:hover'] : {
+            boxShadow: '10px 1px 10px 1px #6f4e03',
+            color: '#fff1d3',
+            border: '1px solid #ecc873'
+          }
         }}
       >
         <div css={{ 

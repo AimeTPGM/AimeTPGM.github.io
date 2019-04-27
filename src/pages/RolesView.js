@@ -4,6 +4,7 @@ import { jsx, css } from '@emotion/core';
 import { mediaMaxWidth } from '../util/util';
 import RibbonComponent from '../components/RibbonComponent';
 import RoleItemComponent from '../components/RoleItemComponent';
+import VolunteerAndActivityView from './VolunteerAndActivityView';
 
 class RolesView extends PureComponent {
 
@@ -15,6 +16,8 @@ class RolesView extends PureComponent {
 
     render() {
         const { activeItemIndex, data } = this.state;
+        const { changePageFunc } = this.props;
+        const volunteerPage = <VolunteerAndActivityView changePageFunc={changePageFunc} />
         const activeItem = data[activeItemIndex];
         return (
         <div css={{ background: 'rgba(0,0,0,0.3)', zIndex: 1 }}>
@@ -50,7 +53,7 @@ class RolesView extends PureComponent {
                     })}
                 </div>
                 <div css={{width: '10%', background: 'rgba(0,0,0,0.2)'}}>
-                    <RibbonComponent />
+                    <RibbonComponent pageToChange={volunteerPage} changePageFunc={changePageFunc} />
                 </div>
             </div>
             {activeItem.experiences.map((item, index) => { 
