@@ -14,7 +14,7 @@ class MenuComponent extends PureComponent {
     constructor(props) {
         super(props);
         this.state = { 
-            renderComponent: () => { return <RolesMasterView /> }, 
+            renderComponent: () => { return <AboutMeView /> }, 
             activeMenuIndex: 0, 
             menu: menuData 
         }
