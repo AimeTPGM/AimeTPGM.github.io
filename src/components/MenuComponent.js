@@ -7,12 +7,13 @@ import ViewContainer from '../pages/ViewContainer';
 import RecommendationView from '../pages/RecommendationView';
 import { mediaMaxWidth } from '../util/util';
 import AboutMeView from '../pages/AboutMeView';
+import VolunteerAndActivityView from '../pages/VolunteerAndActivityView';
 class MenuComponent extends PureComponent {
     
     constructor(props) {
         super(props);
         this.state = { 
-            renderComponent: () => { return <AboutMeView /> }, 
+            renderComponent: () => { return <VolunteerAndActivityView /> }, 
             activeMenuIndex: 0, 
             menu: menuData 
         }

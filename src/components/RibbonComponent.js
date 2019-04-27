@@ -17,7 +17,6 @@ export default () => {
           textAlign: "center",
           lineHeight: "50px",
           letterSpacing: "1px",
-          color: "#f0f0f0",
           transform: "rotate(45deg)",
           color: "#824603"
         }}

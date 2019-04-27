@@ -4,7 +4,6 @@ import { jsx, css } from '@emotion/core';
 import { stringWithNewLine } from '../util/util';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import { lightBlue } from '../appConstant'
 
 export default (props) => {
     const { experienceId, roleId, name, period, description, isOpen, openDescFunc } = props;

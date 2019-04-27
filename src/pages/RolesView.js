@@ -96,29 +96,12 @@ const timelineData = [
                     },
                     {
                         name: 'FullStack Developer',
-                        period: 'Dec 2017 - Dec 20118',
+                        period: 'Dec 2017 - Dec 2018',
                         description: 'Hexalite team is conducting Roadside Assistance Application for facilitating user client and customer of Allianz in case of car breakdown. This project is first technical launching in Austria and Germany and continuously on development to serve people all around the world. \n\nMy responsibilities and experiences as a full stack developer are listed as following: \n\n- Web application development using Angular 5 with unit testing using Jasmine and Karma\n- Mobile application development using React Native with Redux-Saga and Jest for unit testing\n- Backend capabilities development based on Microservice Architecture with Service Discovery(Eureka) using Java Spring Framework, Kotlin, Redis and MySQL with unit testing using Mockito\n- Google Firebase Cloud Messaging for forwarding notification from BE Capabilities to Mobile\n- Liquibase script implementation for database versioning\n- Environment migration from silos to Cloudfoundry\n- Jenkins ci-cd script implementation for automation deployment from checkout stage, build with unit test thru deploy artifact with versioning to nexus\n- Integrating CI/CD with notification service to notify the team in Slack for every Jenkins build process and result\n- partially integrating Sonarqube code quality gate on Backend using Jacoco plugin\n- Github Push Webhook with Jenkins automation build pipeline\n- Partially performing performance testing using Jmeter and plugins\n- Production deployment execution\n- Production Issue Investigation and Solution',
                         isOpen: false
                     }
                 ],
                 tools: [ 'Java', 'Spring', 'Kotlin', 'Redis', 'MySQL', 'Liquibase', 'Mockito', 'Jmeter', 'FCM', 'Cloudfoundry', 'Jenkins', 'Docker', 'Angular', 'Jasmine', 'Javascript', 'React Native', 'Redux', 'Saga', 'Jest'],
-            }
-        ]
-    },
-    {
-        startYear: '2016',
-        experiences: [
-            {
-                roles: [
-                    {
-                        name: 'Public Relation',
-                        period: 'Sept 2016 - Aug 2017',
-                        description : 'Designed invitation posters and publicised news and announcements of activities for Thai students in South Korea on social media',
-                        isOpen: false
-                    }
-                ],
-                place: 'Association of Thai Student in Korea (ATSK), Seoul, South Korea',
-                tools : [ 'Photoshop', 'Facebook', 'KakaoTalk'],
             }
         ]
     },
