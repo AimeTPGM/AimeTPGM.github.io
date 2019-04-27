@@ -5,6 +5,7 @@ import { mediaMaxWidth } from '../util/util';
 import RibbonComponent from '../components/RibbonComponent';
 import RoleItemComponent from '../components/RoleItemComponent';
 import VolunteerAndActivityView from './VolunteerAndActivityView';
+import { masterHilightColor } from '../appConstant';
 
 class RolesView extends PureComponent {
 
@@ -30,17 +31,20 @@ class RolesView extends PureComponent {
                             width: '100%',
                             border: '1px solid rgba(0,0,0,0.1)',
                             background: 'rgba(0,0,0,0.2)',
+                            transition: '0.5s',
                             ['&:not(:first-child)'] : { 
                                 border: '1px solid rgba(255,255,255,0.1), 1px solid rgba(255,255,255,0.1), 1px solid rgba(255,255,255,0.1), 0',
                             },
                             [mediaMaxWidth(768)] : {
                                 fontSize: '0.8em'
+                            },
+                            [':hover']: {
+                                color: masterHilightColor
                             }
                         };
                         if (i == activeItemIndex) {
                             divStyle = { 
                                 ...divStyle,
-                                borderBottom: 0,
                                 color: 'white',
                                 background: 'transparent',
                             }

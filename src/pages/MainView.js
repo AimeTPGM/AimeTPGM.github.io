@@ -4,7 +4,7 @@ import { jsx, css } from '@emotion/core';
 import ContactComponent from '../components/ContactComponent';
 import { mediaMaxWidth } from '../util/util';
 import MenuComponent from '../components/MenuComponent';
-import { lightBlue } from '../appConstant';
+import { lightBlue, masterHilightColor } from '../appConstant';
 
 export default () => (
     <div css={{
@@ -14,7 +14,7 @@ export default () => (
         marginTop: '10vh'
     }}>
         <div><h1><a css={{ color: lightBlue, fontSize: '2em', textDecoration: 'none', ['&:hover'] : {
-                            color: 'white'
+                            color: 'white', ['&:hover']: { color: masterHilightColor }
                         }}} href={'#'}>Aime P.Srikaew</a></h1></div>
         <div css={{ 
                 [mediaMaxWidth(768)]: {

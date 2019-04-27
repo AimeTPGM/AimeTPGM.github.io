@@ -9,6 +9,7 @@ import { mediaMaxWidth } from '../util/util';
 import AboutMeView from '../pages/AboutMeView';
 import VolunteerAndActivityView from '../pages/VolunteerAndActivityView';
 import RolesMasterView from '../pages/RolesMasterView';
+import { masterHilightColor } from '../appConstant';
 class MenuComponent extends PureComponent {
     
     constructor(props) {
@@ -47,10 +48,12 @@ class MenuComponent extends PureComponent {
                         ...this.getActiveStyle(item.isActive),
                         display: 'flex',
                         alignItems: 'center',
+                        transition: '0.5s',
                         ['&:first-child']: {
                             borderRadius: '30px 0 0 30px'
                         },
                         ['&:last-child']: { borderRadius: '0 30px 30px 0' },
+                        ['&:hover']: { color: masterHilightColor }
                     }}
                     onClick={() => { this.navigateTo(key)}}
                 >

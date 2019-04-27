@@ -2,7 +2,7 @@ import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 import { stringWithNewLine, mediaMaxWidth } from '../util/util';
-import { lightMasterColor, masterColor, lightBlue } from '../appConstant';
+import { lightMasterColor, lightBlue, masterLowlightColor } from '../appConstant';
 import RolesView from './RolesView';
 
 export default (props) => {
@@ -27,7 +27,7 @@ export default (props) => {
                             }
                             
                         }}>
-                        <div css={{ position: 'absolute', width: 'fit-content', fontWeight: '900', fontSize: '0.8em', padding: '0 20px', backgroundImage: 'linear-gradient(#ffcd40,#ab7600)', color: '#824603'}}>
+                        <div css={{ position: 'absolute', width: 'fit-content', fontWeight: '900', fontSize: '0.8em', padding: '0 20px', backgroundImage: 'linear-gradient(#ffcd40,#ab7600)', color: masterLowlightColor}}>
                             {item.period}
                             <div css={{ position: 'absolute', width: '27px', height: '27px', backgroundImage: 'linear-gradient(to bottom right,#ffcd40,#ab7600)', right: '-14px', top: '6px', transform: 'rotate(45deg)'}}></div>
                         </div>
