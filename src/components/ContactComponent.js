@@ -23,7 +23,7 @@ export default () => {
                             color: linkColor,
                             ['&:hover']: { color: masterHilightColor }
                         }} 
-                        href={item.link}>
+                        href={item.link} target="_blank">
                         <FontAwesomeIcon icon={item.icon}/>
                     </a>
                 </li>)

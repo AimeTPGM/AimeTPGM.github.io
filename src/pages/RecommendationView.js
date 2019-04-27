@@ -1,22 +1,36 @@
 import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { stringWithNewLine } from '../util/util';
+import { stringWithNewLine, mediaMaxWidth } from '../util/util';
+import { hilightBlueBackgroundColor, lowlightBlueBackgroundColor, masterHilightColor } from '../appConstant';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default () => {
     return (
             <div css={{ marginTop: '40px'}}>
             {recommendation.map((item, key) => {
-            return (<div css={{ border: `1px solid rgba(255,255,255,0.8)`, padding: '20px 40px', fontSize: '0.8em', lineHeight: '1.7em', color: 'rgba(255,255,255,0.8)', margin: '30px 0'}}>
+            return (<div css={{ border: `1px solid rgba(255,255,255,0.8)`, padding: '20px 40px', fontSize: '0.8em', lineHeight: '1.7em', color: 'rgba(255,255,255,0.8)', margin: '30px 0', background: lowlightBlueBackgroundColor, transition: '0.5s', ['&:hover']: { borderColor: masterHilightColor, color: masterHilightColor}}}>
                 <div>
                     <img css={{ borderRadius: '50%', position: 'absolute', left: 0, right: 0, margin: 'auto', marginTop: '-70px'}} src={item.img} />
                 </div>
-                <div css={{textAlign: 'center', margin: '60px'}}>
-                    <div css={{ fontWeight: '900' }}>{item.name}</div>
-                    <div>{item.position}</div>
-                    <div>{item.shortDescription}</div>
+                <div css={{marginTop: '60px', paddingBottom: '150px', textAlign: 'left'}}>
+                    <div css={{ color: 'white' }}>{stringWithNewLine(item.recommendationText)}</div>
+                    <div css={{ maxWidth: '300px', position: 'absolute', right: '80px', bottom: '80px', cursor: 'pointer',
+                            [mediaMaxWidth(768)]: {
+                                right: 'auto',
+                                bottom: 'auto'
+                            } }}>
+                        <a href="https://www.linkedin.com/in/rtclemens/" target="_blank" css={{ textDecoration: 'none', color: 'inherit'}}>
+                        <div css={{ fontWeight: '900' }}>
+                            {item.name}
+                            <FontAwesomeIcon icon={faLinkedin} css={{ marginLeft: '10px'}}/>
+                        </div>
+                        <div>{item.position}</div>
+                        <div>{item.shortDescription}</div>
+                        </a>
+                    </div>
                 </div>
-                <div css={{ textOverflow: 'ellipsis', textAlign: 'left'}}>{stringWithNewLine(item.recommendationText)}</div>
             </div>)
         })}</div>
     )
