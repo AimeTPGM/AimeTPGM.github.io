@@ -49,6 +49,7 @@ class MenuComponent extends PureComponent {
                         display: 'flex',
                         alignItems: 'center',
                         transition: '0.5s',
+                        cursor: 'pointer',
                         ['&:first-child']: {
                             borderRadius: '30px 0 0 30px'
                         },
@@ -61,7 +62,6 @@ class MenuComponent extends PureComponent {
                     <div css={{
                         borderRadius: '10px', 
                         padding: '5px 20px',
-                        cursor: 'pointer',
                         width: '100%'
                     }}
                     >
