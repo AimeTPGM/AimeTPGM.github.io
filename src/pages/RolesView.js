@@ -121,13 +121,13 @@ const timelineData = [
                 roles: [
                     {
                         name: 'Senior e-Government Laboratory Member',
-                        period: 'Sept 2015 - Aug 2016',
+                        period: 'Sept 2016 - Aug 2017',
                         description : 'Teaching others laboratory members and interns to participate in the project through pair programming.',
                         isOpen: false
                     },
                     {
-                        name: 'e-Government Laboratory Member and Senior',
-                        period: 'Sept 2016 - Aug 2017',
+                        name: 'e-Government Laboratory Member',
+                        period: 'Sept 2015 - Aug 2016',
                         description : 'Research on Microservice Architecture and full-stack developed a document management system for managing document flow in e-Government based on a module of ONNARA referring to Microservice Architecture including system requirement gathering, design, development, testing and deployment.',
                         isOpen: false
                     }
