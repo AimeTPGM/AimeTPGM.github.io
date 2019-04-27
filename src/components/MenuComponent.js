@@ -2,12 +2,10 @@ import React, { PureComponent } from 'react';
 
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import RolesView from '../pages/RolesView';
 import ViewContainer from '../pages/ViewContainer';
 import RecommendationView from '../pages/RecommendationView';
 import { mediaMaxWidth } from '../util/util';
 import AboutMeView from '../pages/AboutMeView';
-import VolunteerAndActivityView from '../pages/VolunteerAndActivityView';
 import RolesMasterView from '../pages/RolesMasterView';
 import { masterHilightColor } from '../appConstant';
 class MenuComponent extends PureComponent {
