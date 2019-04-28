@@ -13,7 +13,7 @@ class MenuComponent extends PureComponent {
     constructor(props) {
         super(props);
         this.state = { 
-            renderComponent: () => { return <AboutMeView /> }, 
+            renderComponent: () => { return <RolesMasterView /> }, 
             activeMenuIndex: 0, 
             menu: menuData 
         }
@@ -34,7 +34,7 @@ class MenuComponent extends PureComponent {
             return { display: 'none' }
         }
         return (<div>
-        <div css={{ display: 'flex', justifyContent: 'center', width: 'fit-content', margin: 'auto', marginBottom: '20px', background: 'rgba(0,0,0,0.45)', borderRadius: '30px',
+        <div css={{ display: 'flex', justifyContent: 'center', width: 'fit-content', margin: 'auto', marginBottom: '40px', background: 'rgba(0,0,0,0.45)', borderRadius: '30px',
             [mediaMaxWidth(768)]: { flexDirection: 'column' }}}>
             {menu.map((item, key) => {
                 if (item.isUnimplemented) return null;
@@ -88,11 +88,11 @@ export default MenuComponent;
 
 const menuData = [
     {
-        name: 'Me',
+        name: 'Experiences',
         isLink: false,
         isActive: true,
         isUnimplemented: false,
-        renderComponent: () => { return (<AboutMeView />); }
+        renderComponent: () => { return (<RolesMasterView />); }
     },
     {
         name: 'Education',
@@ -100,13 +100,6 @@ const menuData = [
         isActive: false,
         isUnimplemented: true,
         renderComponent: () => { return (<div>Soon</div>); }
-    },
-    {
-        name: 'Role',
-        isLink: false,
-        isActive: false,
-        isUnimplemented: false,
-        renderComponent: () => { return (<RolesMasterView />); }
     },
     {
         name: 'Archievement',
@@ -128,5 +121,12 @@ const menuData = [
         isActive: false,
         isUnimplemented: true,
         renderComponent: () => { return (<div>Soon</div>); }
+    },
+    {
+        name: 'About Me',
+        isLink: false,
+        isActive: false,
+        isUnimplemented: false,
+        renderComponent: () => { return (<AboutMeView />); }
     }
 ]

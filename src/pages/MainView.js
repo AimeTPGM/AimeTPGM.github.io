@@ -11,11 +11,15 @@ export default () => (
         alignItems: 'center',
         minHeight: '100vh',
         padding: '10px',
-        marginTop: '10vh'
+        marginTop: '2vh'
     }}>
-        <div><h1><a css={{ color: lightBlue, fontSize: '2em', textDecoration: 'none', ['&:hover'] : {
+        <div><h1 css={{ marginBottom: '40px'}}><a css={{ color: lightBlue, fontSize: '2em', textDecoration: 'none',
+                        ['&:hover'] : {
                             color: 'white', ['&:hover']: { color: masterHilightColor }
-                        }}} href={'#'}>Aime P.Srikaew</a></h1></div>
+                        }}} href={'#'}>
+                            <div css={{ textTransform: 'uppercase' }}>Aime</div>
+                            <div css={{ fontSize: '0.3em'}}>P.Srikaew</div>
+                </a></h1></div>
         <div css={{ 
                 [mediaMaxWidth(768)]: {
                     marginTop: 0
