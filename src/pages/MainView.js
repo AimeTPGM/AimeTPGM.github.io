@@ -6,7 +6,7 @@ import { mediaMaxWidth } from '../util/util';
 import MenuComponent from '../components/MenuComponent';
 import { lightBlue, masterHilightColor } from '../appConstant';
 
-const bracketStyle = { fontSize: '1.5em', margin: '0 15px', fontWeight: '100', lineHeight: '1em' }
+const bracketStyle = { fontSize: '1.4em', fontWeight: '100', lineHeight: '0.7em' }
 export default () => (
     <div css={{
         alignItems: 'center',
@@ -18,12 +18,13 @@ export default () => (
                         ['&:hover'] : {
                             color: 'white', ['&:hover']: { color: masterHilightColor }
                         }}} href={'#'}>
-                            <div css={{ ...bracketStyle }}>{'['}</div>
-                            <div>
+                            <div css={{ ...bracketStyle, marginRight: '10px' }}>{'<'}</div>
+                            <div css={{marginRight: '10px'}}>
                                 <div css={{ textTransform: 'uppercase' }}>Aime</div>
-                                <div css={{ fontSize: '0.3em'}}>P.Srikaew</div>
+                                <div css={{ fontSize: '0.3em', fontWeight: '100', lineHeight: '0.5em', letterSpacing: '8.5px'}}>P.Srikaew</div>
                             </div>
-                            <div css={{ ...bracketStyle }}>{']'}</div>
+                            <div css={{ ...bracketStyle, margin: 0, fontSize: '1.3em', lineHeight: '1em' }}>{'/'}</div>
+                            <div css={{ ...bracketStyle }}>{'>'}</div>
                 </a></h1></div>
         <div css={{ 
                 [mediaMaxWidth(768)]: {
