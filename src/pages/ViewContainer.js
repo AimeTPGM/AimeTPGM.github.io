@@ -13,7 +13,6 @@ export default (props) => {
             margin: '10px',
             overflow: 'hidden',
             position: 'relative',
-            padding: '10px',
             textAlign: 'center',
             zIndex: '1',
             margin: 'auto',
