@@ -2,28 +2,9 @@ import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 import RoleSubItemComponent from './RoleSubItemComponent';
+import SkillSetComponent from './SkillSetComponent';
 
 export default (props) => {
-    const renderSkillSet = (skillSet) => {
-        return (<ul css={{
-            listStyle: 'none',
-            display: 'flex',
-            flexWrap: 'wrap', 
-            justifyContent: 'left',
-            padding: 0
-    
-        }}>{skillSet.map(item => {
-            return (<li 
-                css={{ 
-                    fontSize: '0.3em', 
-                    padding: '0 10px', 
-                    lineHeight: '3em',
-                    borderRadius: '15px', 
-                    background: '#1c5189', 
-                    margin: '0 10px 10px 0',
-                }}>{item}</li>)
-        })}</ul>)
-    }
     const { experienceId, place, skillSet, openDescFunc, roles } = props;
         return (
         <div css={{ 
@@ -34,7 +15,7 @@ export default (props) => {
             }
             }}>
             <div css={{  width:'100%', textAlign: 'left'}}>
-                <div css={{ fontSize: '0.7em', fontStyle: 'oblique', lineHeight: '1.2em', padding: '0 40px'}}>{place}</div>
+                <div css={{ fontSize: '0.7em', fontStyle: 'oblique', lineHeight: '1.2em', padding: '0 40px', marginBottom: '30px'}}>{place}</div>
                 {roles.map((item, roleId) => {
                     return (<RoleSubItemComponent
                             key={roleId}
@@ -45,9 +26,18 @@ export default (props) => {
                             description={item.description}
                             isOpen={item.isOpen}
                             openDescFunc={openDescFunc}
+                            isPresent={item.isPresent}
                          />)
                 })}
-                <div css={{padding: '0 40px'}}>{renderSkillSet(skillSet)}</div>
+                <div css={{padding: '0 40px'}}>
+                    {skillSet.map((item, key) => {
+                        return (<div key={key} css={{ display: 'flex', alignItems: 'baseline', ['&:first-child']: { marginTop: '20px'}}}>
+                            <div css={{ fontSize: '0.4em', lineHeight: '1.4em', width: '20%', textAlign: 'right', marginRight: '15px'}}>{item.skillName}:</div>
+                            <SkillSetComponent skillSet={item.itemList} />
+                        </div>)
+                    })
+                    }
+                </div>
             </div>
         </div>)
 }

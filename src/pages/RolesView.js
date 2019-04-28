@@ -99,7 +99,8 @@ const timelineData = [
                         name: 'Senior FullStack Developer',
                         period: 'Jan 2019 - Present',
                         description: 'Frontend Refactoring Initiatives (React Native Redux Saga)\nRelease 3 Performance Testing Facilitator',
-                        isOpen: false
+                        isOpen: false,
+                        isPresent: true
                     },
                     {
                         name: 'FullStack Developer',
@@ -108,7 +109,24 @@ const timelineData = [
                         isOpen: false
                     }
                 ],
-                tools: [ 'Java', 'Spring', 'Kotlin', 'Redis', 'MySQL', 'Liquibase', 'Mockito', 'Jmeter', 'FCM', 'Cloudfoundry', 'Jenkins', 'Docker', 'Angular', 'Jasmine', 'Javascript', 'React Native', 'Redux', 'Saga', 'Jest'],
+                tools: [ 
+                    {
+                        skillName: 'Backend Technologies',
+                        itemList: ['Java', 'Spring', 'Kotlin', 'Redis', 'MySQL', 'Liquibase', 'Mockito', 'Firebase Cloud Messaging']
+                    },
+                    {
+                        skillName: 'Frontend Technologies',
+                        itemList: ['Javascript ES6', 'HTML', 'SASS', 'Angular5', 'Jasmine',  'React Native', 'Redux', 'Saga', 'Jest']
+                    },
+                    {
+                        skillName: 'Build and Delivery Tools',
+                        itemList: ['Cloudfoundry', 'Jenkins', 'Docker', 'Maven']
+                    },
+                    {
+                        skillName: 'Others',
+                        itemList: ['Jmeter']
+                    }
+                ]
             }
         ]
     },
@@ -117,7 +135,20 @@ const timelineData = [
         experiences: [
             {
                 place : "Kookmin University, Seoul, South Korea",
-                tools : ['IONIC', 'HTML', 'CSS', 'Javascript', 'Java', 'Spring', 'Python', 'Flask', 'Docker', 'Openstack'],
+                tools : [
+                    {
+                        skillName: 'Backend Technologies',
+                        itemList: ['Java', 'Spring', 'Python', 'Flask']
+                    },
+                    {
+                        skillName: 'Frontend Technologies',
+                        itemList: ['IONIC', 'HTML', 'CSS', 'Javascript', 'JADE']
+                    },
+                    {
+                        skillName: 'Build and Delivery Tools',
+                        itemList: ['Docker', 'Openstack']
+                    },
+                ],
                 roles: [
                     {
                         name: 'Senior e-Government Laboratory Member',
@@ -149,7 +180,16 @@ const timelineData = [
                     }
                 ],
                 place : 'Freelance, Bangkok, Thailand',
-                tools : ['IONIC', 'HTML', 'CSS', 'Javascript', 'Photoshop']
+                tools : [
+                    {
+                        skillName: 'Frontend Technologies',
+                        itemList: ['IONIC', 'HTML', 'CSS', 'Javascript']
+                    },
+                    {
+                        skillName: 'Others',
+                        itemList: ['Photoshop']
+                    }
+                ],
             },
         ]
     },
@@ -166,7 +206,16 @@ const timelineData = [
                     }
                 ],
                 place : 'Kookmin University, Seoul, South Korea',
-                tools : ['Bootstrap', 'HTML', 'CSS', 'Javascript', 'CodeIgniter', 'PHP']
+                tools : [
+                    {
+                        skillName: 'Backend Technologies',
+                        itemList: ['PHP', 'CodeIgniter']
+                    },
+                    {
+                        skillName: 'Frontend Technologies',
+                        itemList: ['Bootstrap', 'HTML', 'CSS', 'Javascript']
+                    }
+                ],
             }
         ]
     }
