@@ -14,8 +14,7 @@ export default () => {
             justifyContent: 'center',
             fontSize: '1.5em',
             lineHeight: 0,
-            padding: 0,
-            margin: '0 0 30px 0'
+            padding: 0
         }}>
             {contact.map(item => {
                 return (<li css={{ margin: '10px'}}>
