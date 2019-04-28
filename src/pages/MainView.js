@@ -14,10 +14,7 @@ export default () => (
         marginTop: '5vh'
     }}>
         <div><h1 css={{ marginBottom: '50px'}}>
-            <a css={{ color: lightBlue, fontSize: '2em', textDecoration: 'none', display: 'flex', justifyContent: 'center',
-                        ['&:hover'] : {
-                            color: 'white', ['&:hover']: { color: masterHilightColor }
-                        }}} href={'#'}>
+            <a css={{ color: masterHilightColor, fontSize: '2em', textDecoration: 'none', display: 'flex', justifyContent: 'center'}} href={'#'}>
                             <div css={{ ...bracketStyle, marginRight: '10px' }}>{'<'}</div>
                             <div css={{marginRight: '10px'}}>
                                 <div css={{ textTransform: 'uppercase' }}>Aime</div>
