@@ -34,7 +34,7 @@ class MenuComponent extends PureComponent {
             return { display: 'none' }
         }
         return (<div>
-        <div css={{ display: 'flex', justifyContent: 'center', width: 'fit-content', margin: 'auto', marginBottom: '40px', background: 'rgba(0,0,0,0.45)', borderRadius: '30px',
+        <div css={{ display: 'flex', justifyContent: 'center', width: 'fit-content', margin: 'auto', marginBottom: '50px', background: 'rgba(0,0,0,0.45)', borderRadius: '30px',
             [mediaMaxWidth(768)]: { flexDirection: 'column' }}}>
             {menu.map((item, key) => {
                 if (item.isUnimplemented) return null;

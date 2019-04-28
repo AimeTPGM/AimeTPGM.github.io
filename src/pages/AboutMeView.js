@@ -27,7 +27,7 @@ export default () => {
         <div css={{background: 'rgba(0,0,0,0.3)', marginTop: '125px', paddingTop: '130px'}}>
         <div css={{ ...textHilightStyle }}><strong>Welcome Visitor!</strong></div>
         <div css={{ ...textHilightStyle }}>This is Aime :)</div>
-        <div css={{ fontSize: '0.8em', lineHeight: '1.3em', padding: '0 5vw 80px 5vw', textAlign: 'left', [mediaMaxWidth(768)]: { }}}>
+        <div css={{ fontSize: '0.8em', lineHeight: '1.3em', padding: '0 8vw 80px 8vw', textAlign: 'left', [mediaMaxWidth(768)]: { }}}>
             <p>I'm a <span css={{ ...textHilightStyle }}>software developer</span> from Thailand.</p>
             <p>If you ask me about my preferred specific role, I like to be <span css={{ ...textHilightStyle }}>FullStack dev</span> since we can rotate around the new area we haven't seen it yet. <span css={{ ...textHilightStyle }}>I like to talk and meet with people</span>, exchange the opinions and perspectives. Don't be afraid! <span css={{ ...textHilightStyle }}>My contact is in the bottom of the site.</span></p>
             <p>Nice to see all my old friends and new faces. Let's have a little chat ;)</p>
