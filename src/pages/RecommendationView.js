@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default () => {
     return (
-            <div css={{ marginTop: '40px'}}>
+            <div css={{ marginTop: '60px'}}>
             {recommendation.map((item, key) => {
             return (<div css={{ border: `1px solid rgba(255,255,255,0.8)`, padding: '20px 40px', fontSize: '0.8em', lineHeight: '1.7em', color: 'rgba(255,255,255,0.8)', margin: '30px 0', background: lowlightBlueBackgroundColor, transition: '0.5s', ['&:hover']: { borderColor: masterHilightColor, color: masterHilightColor, background:'#1c518a'}}}>
                 <div>

@@ -21,8 +21,8 @@ class RolesView extends PureComponent {
         const volunteerPage = <VolunteerAndActivityView changePageFunc={changePageFunc} />
         const activeItem = data[activeItemIndex];
         return (
-        <div css={{ background: 'rgba(0,0,0,0.3)', zIndex: 1 }}>
-            <div css={{display: 'flex'}}>
+        <div css={{ zIndex: 1, padding: '10px' }}>
+            <div css={{display: 'flex', background: 'rgba(0,0,0,0.3)'}}>
                 <div css={{display: 'flex', justifyContent: 'space-around', width: '90%', [mediaMaxWidth(768)] : { width: 'calc(90% - 60px)'}}}>
                     {timelineData.map((item, i) => {
                         let divStyle = { 

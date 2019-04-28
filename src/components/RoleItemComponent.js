@@ -8,6 +8,7 @@ export default (props) => {
     const { experienceId, place, skillSet, openDescFunc, roles } = props;
         return (
         <div css={{ 
+            background: 'rgba(0,0,0,0.3)',
             display: 'flex', 
             padding: '30px 0',
             ['&:not(:last-child)']: {

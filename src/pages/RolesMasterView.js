@@ -10,7 +10,6 @@ export default class RolesMasterView extends PureComponent {
     }
 
     changePage(page){
-        console.log('here')
         this.setState({ activePage: page });
         this.forceUpdate();
     }

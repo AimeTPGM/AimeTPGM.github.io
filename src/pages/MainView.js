@@ -10,8 +10,7 @@ export default () => (
     <div css={{
         alignItems: 'center',
         minHeight: '100vh',
-        padding: '10px',
-        marginTop: '2vh'
+        marginTop: '5vh'
     }}>
         <div><h1 css={{ marginBottom: '40px'}}><a css={{ color: lightBlue, fontSize: '2em', textDecoration: 'none',
                         ['&:hover'] : {
