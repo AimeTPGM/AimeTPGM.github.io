@@ -20,7 +20,7 @@ export default () => (
                                 <div css={{ textTransform: 'uppercase', fontWeight: '400' }}>Aime</div>
                                 <div css={{ fontSize: '0.3em', fontWeight: '100', lineHeight: '0.5em', letterSpacing: '7.5px'}}>P.Srikaew</div>
                             </div>
-                            <div css={{ ...bracketStyle, margin: 0, fontSize: '1.3em', lineHeight: '1em' }}>{'/'}</div>
+                            <div css={{ ...bracketStyle, margin: 0, fontSize: '1.35em', lineHeight: '1em' }}>{'/'}</div>
                             <div css={{ ...bracketStyle }}>{'>'}</div>
                 </a></h1></div>
         <div css={{ 
