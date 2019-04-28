@@ -20,18 +20,14 @@ export default (props) => {
                 return (
                     <div key={index} 
                         css={{
-                            width: '46%',
-                            padding: '0 20px',
-                            [mediaMaxWidth(768)]: {
-                                width: '100%'
-                            }
-                            
+                            width: '100%',
+                            padding: '0 20px'
                         }}>
                         <div css={{ position: 'absolute', width: 'fit-content', fontWeight: '900', fontSize: '0.8em', padding: '0 20px', backgroundImage: 'linear-gradient(#ffcd40,#ab7600)', color: masterLowlightColor}}>
                             {item.period}
                             <div css={{ position: 'absolute', width: '27px', height: '27px', backgroundImage: 'linear-gradient(to bottom right,#ffcd40,#ab7600)', right: '-14px', top: '6px', transform: 'rotate(45deg)'}}></div>
                         </div>
-                        <div css={{ color: 'rgba(255,255,255,0.8)', margin: '20px 0', border: '1px solid #ffd15a', padding: '40px 20px 20px 20px', height: '180px', overflow: 'scroll', background: '#0d253e', transition: '0.5s', ['&::-webkit-scrollbar']: { display: 'none'}, ['&:hover']: { background:'#1c518a', color: '#ffcd40' } }}>
+                        <div css={{ color: 'rgba(255,255,255,0.8)', margin: '20px 0', border: '1px solid #ffd15a', padding: '40px 20px 20px 20px', overflow: 'scroll', background: '#0d253e', transition: '0.5s', ['&::-webkit-scrollbar']: { display: 'none'}, ['&:hover']: { background:'#1c518a', color: '#ffcd40' } }}>
                             <div css={{ fontWeight: '900', fontSize: '1.2em', lineHeight: '1.2em'}}>{item.role}</div>
                             <div css={{ fontSize: '0.8em', lineHeight: '1.2em', fontStyle: 'oblique', margin: '10px 0 20px 0'}}>@{item.organization}</div>
                             <div css={{fontSize: '0.8em', lineHeight: '1.6em'}}>{stringWithNewLine(item.description)}</div>

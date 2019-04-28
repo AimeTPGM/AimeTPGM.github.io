@@ -32,7 +32,7 @@ export default (props) => {
                 <FontAwesomeIcon css={{ cursor: 'pointer', color: '#8ec1f7', fontSize: '1.2em', ...getRotateArrowStyle() }} icon={faChevronRight}/> 
             </div>
         </div>
-        {!!isOpen ? <div css={{ width: '90%', fontSize: '0.7em', lineHeight: '1.5em', padding: '0 40px 20px 40px'}}>{stringWithNewLine(description)}</div> : null}
+        {!!isOpen ? <div css={{ width: '90%', fontSize: '0.7em', lineHeight: '1.5em', padding: '0 40px'}}>{stringWithNewLine(description)}</div> : null}
     </div>
     
     )

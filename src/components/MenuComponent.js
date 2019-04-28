@@ -22,7 +22,7 @@ class MenuComponent extends PureComponent {
 
     getActiveStyle(isActive) {
         if(isActive) return { 
-            background: '#113052', borderRadius: '30px !important'
+            background: '#113052', borderRadius: '30px !important', color: masterHilightColor
         }
         return {  color: 'white', }
     }
@@ -73,7 +73,7 @@ class MenuComponent extends PureComponent {
     }
 
     navigateTo(nextActiveMenuIndex) {
-        const { activeMenuIndex, menu } = this.state;
+        const { activeMenuIndex } = this.state;
         if (nextActiveMenuIndex === activeMenuIndex) return;
 
         let newMenu = menuData;

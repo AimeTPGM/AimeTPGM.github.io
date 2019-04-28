@@ -45,7 +45,7 @@ class RolesView extends PureComponent {
                         if (i == activeItemIndex) {
                             divStyle = { 
                                 ...divStyle,
-                                color: 'white',
+                                color: masterHilightColor,
                                 background: 'transparent',
                             }
                         }
