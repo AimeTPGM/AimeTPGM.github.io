@@ -7,6 +7,7 @@ import hotsLogo from '../assets/hots-logo.png';
 import hsLogo from '../assets/hs-logo.png';
 import dota2Logo from '../assets/dota-2-logo.png';
 import pubgLogo from '../assets/pubg-logo.png';
+import profile from '../assets/profile.jpg';
 
 export default () => {
     const textHilightStyle = { color: lightBlue, fontWeight: '900' }
@@ -22,7 +23,7 @@ export default () => {
                 left: 0,
                 right: 0,
                 margin: 'auto',
-            }} src={'https://avatars0.githubusercontent.com/u/5433758?s=460&v=4'} />
+            }} src={profile} />
         </div>
         <div css={{background: 'rgba(0,0,0,0.3)', marginTop: '125px', paddingTop: '130px'}}>
         <div css={{ ...textHilightStyle }}><strong>Welcome Visitor!</strong></div>
