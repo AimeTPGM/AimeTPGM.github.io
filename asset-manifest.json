@@ -1,13 +1,13 @@
 {
   "main.css": "/static/css/main.d2607183.chunk.css",
-  "main.js": "/static/js/main.a9f94319.chunk.js",
-  "main.js.map": "/static/js/main.a9f94319.chunk.js.map",
+  "main.js": "/static/js/main.5ac18fe3.chunk.js",
+  "main.js.map": "/static/js/main.5ac18fe3.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
   "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.358b2dc4.chunk.js": "/static/js/2.358b2dc4.chunk.js",
-  "static/js/2.358b2dc4.chunk.js.map": "/static/js/2.358b2dc4.chunk.js.map",
+  "static/js/2.429b5a24.chunk.js": "/static/js/2.429b5a24.chunk.js",
+  "static/js/2.429b5a24.chunk.js.map": "/static/js/2.429b5a24.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.0d3cc0f9236dbe34896721c470b7f511.js": "/precache-manifest.0d3cc0f9236dbe34896721c470b7f511.js",
+  "precache-manifest.7e96f68e44770b6e3195dc4569433491.js": "/precache-manifest.7e96f68e44770b6e3195dc4569433491.js",
   "service-worker.js": "/service-worker.js",
   "static/css/main.d2607183.chunk.css.map": "/static/css/main.d2607183.chunk.css.map",
   "static/media/dota-2-logo.png": "/static/media/dota-2-logo.b6262b52.png",
@@ -15,5 +15,6 @@
   "static/media/hs-logo.png": "/static/media/hs-logo.c01740a2.png",
   "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
   "static/media/profile.jpg": "/static/media/profile.a16538e5.jpg",
-  "static/media/pubg-logo.png": "/static/media/pubg-logo.fd40c991.png"
+  "static/media/pubg-logo.png": "/static/media/pubg-logo.fd40c991.png",
+  "static/media/resume.pdf": "/static/media/resume.964d5e5d.pdf"
 }
