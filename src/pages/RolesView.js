@@ -15,64 +15,96 @@ class RolesView extends PureComponent {
         this.openDescription = this.openDescription.bind(this)  
     }
 
+    renderMiniInfo() {
+        const miniInfo = [ 
+            {
+                icon: 'fullname',
+                text: 'pankamol srikaew'
+            },
+            {
+                icon: 'location',
+                text: 'Bangkok, Thailand'
+            }
+        ]
+        return (<div css={{ display: 'flex'}}>
+            {miniInfo.map((item, key) => {
+                return (<div css={{
+                    ['&:not(:first-child)'] : {
+                        marginLeft: '50px'
+                    }
+                 }}>
+                    {item.text}
+                </div>)
+            })}
+        </div>)
+    }
+
+    renderRolesTable(activeItem, volunteerPage,  activeItemIndex, changePageFunc) {
+        return (<div css={{ zIndex: 1, padding: '10px' }}>
+        <div css={{display: 'flex', background: 'rgba(0,0,0,0.3)'}}>
+            <div css={{display: 'flex', justifyContent: 'space-around', width: '90%', [mediaMaxWidth(768)] : { width: 'calc(90% - 60px)'}}}>
+                {timelineData.map((item, i) => {
+                    let divStyle = { 
+                        color: 'white', 
+                        cursor: 'pointer',
+                        width: '100%',
+                        border: '1px solid rgba(0,0,0,0.1)',
+                        background: 'rgba(0,0,0,0.2)',
+                        transition: '0.5s',
+                        ['&:not(:first-child)'] : { 
+                            border: '1px solid rgba(255,255,255,0.1), 1px solid rgba(255,255,255,0.1), 1px solid rgba(255,255,255,0.1), 0',
+                        },
+                        [mediaMaxWidth(768)] : {
+                            fontSize: '0.8em'
+                        },
+                        [':hover']: {
+                            color: masterHilightColor
+                        }
+                    };
+                    if (i == activeItemIndex) {
+                        divStyle = { 
+                            ...divStyle,
+                            color: masterHilightColor,
+                            background: 'transparent',
+                        }
+                    }
+                    return (
+                        <div key={i} css={{...divStyle}}
+                        onClick={ () => {
+                            this.setState({ activeItemIndex: i })
+                        }}>{item.startYear}</div>)
+                })}
+            </div>
+            <div css={{width: '10%', background: 'rgba(0,0,0,0.2)'}}>
+                <RibbonComponent pageToChange={volunteerPage} changePageFunc={changePageFunc} />
+            </div>
+        </div>
+        {activeItem.experiences.map((item, index) => { 
+            return (
+            <RoleItemComponent 
+                experienceId={index}
+                place={item.place}
+                skillSet={item.tools}
+                openDescFunc={this.openDescription} 
+                roles={item.roles}
+                 />
+            );
+        }
+        )}
+        </div>)
+    }
+
     render() {
         const { activeItemIndex, data } = this.state;
         const { changePageFunc } = this.props;
         const volunteerPage = <VolunteerAndActivityView changePageFunc={changePageFunc} />
         const activeItem = data[activeItemIndex];
+        
         return (
-        <div css={{ zIndex: 1, padding: '10px' }}>
-            <div css={{display: 'flex', background: 'rgba(0,0,0,0.3)'}}>
-                <div css={{display: 'flex', justifyContent: 'space-around', width: '90%', [mediaMaxWidth(768)] : { width: 'calc(90% - 60px)'}}}>
-                    {timelineData.map((item, i) => {
-                        let divStyle = { 
-                            color: 'white', 
-                            cursor: 'pointer',
-                            width: '100%',
-                            border: '1px solid rgba(0,0,0,0.1)',
-                            background: 'rgba(0,0,0,0.2)',
-                            transition: '0.5s',
-                            ['&:not(:first-child)'] : { 
-                                border: '1px solid rgba(255,255,255,0.1), 1px solid rgba(255,255,255,0.1), 1px solid rgba(255,255,255,0.1), 0',
-                            },
-                            [mediaMaxWidth(768)] : {
-                                fontSize: '0.8em'
-                            },
-                            [':hover']: {
-                                color: masterHilightColor
-                            }
-                        };
-                        if (i == activeItemIndex) {
-                            divStyle = { 
-                                ...divStyle,
-                                color: masterHilightColor,
-                                background: 'transparent',
-                            }
-                        }
-                        return (
-                            <div key={i} css={{...divStyle}}
-                            onClick={ () => {
-                                this.setState({ activeItemIndex: i })
-                            }}>{item.startYear}</div>)
-                    })}
-                </div>
-                <div css={{width: '10%', background: 'rgba(0,0,0,0.2)'}}>
-                    <RibbonComponent pageToChange={volunteerPage} changePageFunc={changePageFunc} />
-                </div>
+            <div>
+                {this.renderRolesTable(activeItem, volunteerPage, activeItemIndex, changePageFunc)}
             </div>
-            {activeItem.experiences.map((item, index) => { 
-                return (
-                <RoleItemComponent 
-                    experienceId={index}
-                    place={item.place}
-                    skillSet={item.tools}
-                    openDescFunc={this.openDescription} 
-                    roles={item.roles}
-                     />
-                );
-            }
-            )}
-            </div>)
+        )
     }
 
     openDescription(experienceIndex, roleIndex) {
@@ -98,7 +130,7 @@ const timelineData = [
                     {
                         name: 'Senior FullStack Developer',
                         period: 'Jan 2019 - Present',
-                        description: 'Frontend Refactoring Initiatives (React Native Redux Saga)\nRelease 3 Performance Testing Facilitator',
+                        description: 'Leading Frontend Refactoring Initiatives\nRelease 3 Performance Test',
                         isOpen: false,
                         isPresent: true
                     },
