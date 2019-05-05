@@ -67,6 +67,28 @@ class MenuComponent extends PureComponent {
                     </div>
                 </div>)
             })}
+            <div
+                css={{
+                    padding: '20px',
+                    minWidth: '50px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    transition: '0.5s',
+                    cursor: 'pointer',
+                    ['&:last-child']: { borderRadius: '0 30px 30px 0' },
+                    ['&:hover']: { color: masterHilightColor }
+                }}
+                    onClick={() => { window.open('https://aimetpgm.github.io/blog/') }}
+                >
+                    <div css={{
+                        borderRadius: '10px', 
+                        padding: '5px 20px',
+                        width: '100%'
+                    }}
+                    >
+                        Blog
+                    </div>
+                </div>
         </div>
             <ViewContainer renderComponent={this.state.renderComponent} />
         </div>)
@@ -114,13 +136,6 @@ const menuData = [
         isActive: false,
         isUnimplemented: false,
         renderComponent: () =>  { return (<RecommendationView />); }
-    },
-    {
-        name: 'Blog',
-        isLink: false,
-        isActive: false,
-        isUnimplemented: true,
-        renderComponent: () => { return (<div>Soon</div>); }
     },
     {
         name: 'About Me',
