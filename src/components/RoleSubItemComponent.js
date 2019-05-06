@@ -1,7 +1,7 @@
 import React, { StatelessComponent } from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { stringWithNewLine } from '../util/util';
+import { stringWithNewLine, mediaMaxWidth } from '../util/util';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { masterHilightColor } from '../appConstant';
@@ -32,7 +32,7 @@ export default (props) => {
                 <FontAwesomeIcon css={{ cursor: 'pointer', color: '#8ec1f7', fontSize: '1.2em', ...getRotateArrowStyle() }} icon={faChevronRight}/> 
             </div>
         </div>
-        {!!isOpen ? <div css={{ width: '90%', fontSize: '0.7em', lineHeight: '1.5em', padding: '0 40px'}}>{stringWithNewLine(description)}</div> : null}
+        {!!isOpen ? <div css={{ width: '90%', fontSize: '0.7em', lineHeight: '1.5em', padding: '0 40px', [mediaMaxWidth(768)]: {  padding: '0 20px' }}}>{stringWithNewLine(description)}</div> : null}
     </div>
     
     )
