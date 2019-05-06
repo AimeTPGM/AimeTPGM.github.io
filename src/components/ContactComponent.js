@@ -36,7 +36,8 @@ export default () => {
             ['&:hover'] : {
             boxShadow: '1px 1px 10px 1px #6f4e03',
             color: '#fff1d3',
-            border: '1px solid #ecc873'
+            border: '1px solid #ecc873',
+            textTransform: 'uppercase'
             }}}>Resume</div>
     </div>)
 }
