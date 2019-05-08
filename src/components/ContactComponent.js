@@ -32,12 +32,11 @@ export default () => {
         <div onClick={() => {
                 window.open(resume);
             }}
-            css={{ padding: '10px 20px', backgroundImage: 'linear-gradient(#ffcd40,#ab7600)', color: masterLowlightColor, fontWeight: '700', borderRadius: '50px', margin: '10px', cursor: 'pointer', border: '1px solid #ab7600', transition: '0.5s',
+            css={{ padding: '10px 20px', backgroundImage: 'linear-gradient(#ffcd40,#ab7600)', color: masterLowlightColor, fontWeight: '700', borderRadius: '50px', margin: '10px', cursor: 'pointer', border: '1px solid #ab7600', transition: '0.5s', textTransform: 'uppercase',
             ['&:hover'] : {
             boxShadow: '1px 1px 10px 1px #6f4e03',
             color: '#fff1d3',
             border: '1px solid #ecc873',
-            textTransform: 'uppercase'
             }}}>Resume</div>
     </div>)
 }
