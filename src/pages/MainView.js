@@ -1,36 +1,38 @@
 import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import ContactComponent from '../components/ContactComponent';
 import { mediaMaxWidth } from '../util/util';
-import MenuComponent from '../components/MenuComponent';
-import { lightBlue, masterHilightColor } from '../appConstant';
+import { colorScheme } from '../appConstant';
+import resume from '../assets/resume.pdf';
 
-const bracketStyle = { fontSize: '1.4em', fontWeight: '400', lineHeight: '0.7em' }
 export default () => (
     <div css={{
         alignItems: 'center',
-        minHeight: '100vh',
-        marginTop: '5vh'
+        maxHeight: '100vh',
+        textAlign: 'left',
+        overflow: 'hidden'
     }}>
-        <div><h1 css={{ marginBottom: '50px'}}>
-            <a css={{ color: masterHilightColor, fontSize: '2em', textDecoration: 'none', display: 'flex', justifyContent: 'center'}} href={'#'}>
-                            <div css={{ ...bracketStyle, marginRight: '10px' }}>{'<'}</div>
-                            <div css={{marginRight: '10px'}}>
-                                <div css={{ textTransform: 'uppercase', fontWeight: '500' }}>Aime</div>
-                                <div css={{ fontSize: '0.3em', fontWeight: '100', lineHeight: '0.5em', letterSpacing: '7.5px'}}>P.Srikaew</div>
-                            </div>
-                            <div css={{ ...bracketStyle, margin: 0, fontSize: '1.35em', lineHeight: '1em' }}>{'/'}</div>
-                            <div css={{ ...bracketStyle }}>{'>'}</div>
-                </a></h1></div>
+        <div css={{ position: 'absolute', zIndex: '1', fontSize: '100vh', lineHeight: '80vh', color: colorScheme.secondaryBgColor, fontWeight: 'bold', marginLeft: '-20px'}}>{'{'}</div>
         <div css={{ 
-                [mediaMaxWidth(768)]: {
-                    marginTop: 0
-                }
-            }}>
-            <MenuComponent />
-            <ContactComponent />
+            [mediaMaxWidth(768)]: { width: '60%' }, 
+            position: 'absolute', width: '50%', left: 0, right: 0, margin: 'auto', marginTop: '25vh', zIndex: 2}}>
+            <div css={{ 
+                [mediaMaxWidth(768)]: { fontSize: '2em' },
+                fontSize: '4em', fontWeight: 'bold', color: colorScheme.topicTextColor
+                }}>My name is</div>
+            <div css={{ [mediaMaxWidth(768)]: { fontSize: '3em' },
+                fontSize: '5em', fontWeight: 'bold', textTransform: 'uppercase', margin: '20px 0'}}>Pankamol Srikaew</div>
+            <div css={{ fontsize: '2em', fontWeight: 'bold', color: colorScheme.secondaryTextColor, marginBottom: '80px'}}>This is my journey as a developer</div>
+
+            <div 
+                onClick={() => { window.open(resume);}}
+                css={{
+                [mediaMaxWidth(768)]: { margin: 'auto' }, 
+                fontsize: '2em', fontWeight: 'bold', color: colorScheme.topicTextColor, padding: '10px 20px', border: '2px solid '+colorScheme.topicTextColor, width: 'fit-content', cursor: 'pointer'}}>
+                My Resume →
+            </div>
         </div>
+        
     </div>
 )
 
