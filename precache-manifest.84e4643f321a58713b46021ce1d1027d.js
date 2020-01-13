@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "964d5e5dc6222e445fe63c4e6c91982b",
-    "url": "/static/media/resume.964d5e5d.pdf"
+    "revision": "32e171d62c86e289718697db7a98d7f4",
+    "url": "/static/media/pankamol-srikaew-resume-2020.32e171d6.pdf"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "5b4b07d26341f00fc0b4",
-    "url": "/static/js/main.093c4016.chunk.js"
+    "revision": "a39c54c7e641f226ef6b",
+    "url": "/static/js/main.0700f053.chunk.js"
   },
   {
     "revision": "ac01b8e38e7a62de2402",
     "url": "/static/js/2.499cbcb5.chunk.js"
   },
   {
-    "revision": "5b4b07d26341f00fc0b4",
+    "revision": "a39c54c7e641f226ef6b",
     "url": "/static/css/main.31696002.chunk.css"
   },
   {
-    "revision": "69f0d14b3e941821439718ca8fc28a38",
+    "revision": "96c7b18acab150559ecf0282365ae8ab",
     "url": "/index.html"
   }
 ];
