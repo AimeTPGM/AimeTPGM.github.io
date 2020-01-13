@@ -3,7 +3,7 @@ import React from 'react';
 import { jsx, css } from '@emotion/core';
 import { mediaMaxWidth } from '../util/util';
 import { colorScheme } from '../appConstant';
-import resume from '../assets/resume.pdf';
+import resume from '../assets/pankamol-srikaew-resume-2020.pdf';
 
 export default () => (
     <div css={{
