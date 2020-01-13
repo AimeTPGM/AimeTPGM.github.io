@@ -13,9 +13,10 @@ export default () => (
         overflow: 'hidden'
     }}>
         <div css={{ position: 'absolute', zIndex: '1', fontSize: '100vh', lineHeight: '80vh', color: colorScheme.secondaryBgColor, fontWeight: 'bold', marginLeft: '-20px'}}>{'{'}</div>
+        <div css={{ [mediaMaxWidth(768)]: { display: 'none' }, position: 'absolute', zIndex: '1', right: 0, fontSize: '100vh', lineHeight: '80vh', color: colorScheme.secondaryBgColor, fontWeight: 'bold', marginRight: '-20px'}}>{'}'}</div>
         <div css={{ 
-            [mediaMaxWidth(768)]: { width: '60%' }, 
-            position: 'absolute', width: '50%', left: 0, right: 0, margin: 'auto', marginTop: '25vh', zIndex: 2}}>
+            [mediaMaxWidth(768)]: { width: '60%', textAlign: 'left' }, 
+            position: 'absolute', width: '50%', left: 0, right: 0, margin: 'auto', marginTop: '25vh', zIndex: 2, textAlign: 'center'}}>
             <div css={{ 
                 [mediaMaxWidth(768)]: { fontSize: '2em' },
                 fontSize: '4em', fontWeight: 'bold', color: colorScheme.topicTextColor
@@ -26,9 +27,7 @@ export default () => (
 
             <div 
                 onClick={() => { window.open(resume);}}
-                css={{
-                [mediaMaxWidth(768)]: { margin: 'auto' }, 
-                fontsize: '2em', fontWeight: 'bold', color: colorScheme.topicTextColor, padding: '10px 20px', border: '2px solid '+colorScheme.topicTextColor, width: 'fit-content', cursor: 'pointer'}}>
+                css={{fontsize: '2em', fontWeight: 'bold',  margin: 'auto', color: colorScheme.topicTextColor, padding: '10px 20px', border: '2px solid '+colorScheme.topicTextColor, width: 'fit-content', cursor: 'pointer'}}>
                 My Resume →
             </div>
         </div>
