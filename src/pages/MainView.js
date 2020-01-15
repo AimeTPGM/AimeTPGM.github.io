@@ -34,11 +34,11 @@ export default () => (
                 </div>
             </Link>
 
-            <div 
+            {/* <div 
                 onClick={() => { window.open(resume);}}
                 css={{fontsize: '2em', fontWeight: 'bold',  margin: 'auto', color: colorScheme.topicTextColor, padding: '10px 20px', border: '2px solid '+colorScheme.topicTextColor, width: 'fit-content', cursor: 'pointer'}}>
                 My Resume <Arrow />
-            </div>
+            </div> */}
         </div>
         
     </div>
