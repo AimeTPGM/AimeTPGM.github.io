@@ -13,7 +13,7 @@ export default () => {
     const getContent = () => {
         return (<div css={{
             [mediaMaxWidth(768)]: {
-
+                padding: '0 20px'
             },
             padding: '0 300px'
         }}>
