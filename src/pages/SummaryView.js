@@ -6,6 +6,7 @@ import BackgroundElement from '../components/BackgroundElement';
 import MainHeader from '../components/MainHeader';
 import Timeline from '../components/Timeline';
 import SubHeaderWithDesc from '../components/SubHeaderWithDesc';
+import { Link } from 'react-router-dom';
 
 export default () => {
     const getWorkAndExperiencesHeader = () =>  { 
@@ -29,10 +30,13 @@ export default () => {
                 <Timeline />
             </div>
 
+            <Link to="/recommendation">
             <div>
+                
                 <MainHeader textElement={'Recommendation'} />
                 <SubHeaderWithDesc headerText={'Ryan Clemens'} desc={'Development Manager at Allianz Technology Thailand'} />
             </div>
+            </Link>
 
             <div>
                 <MainHeader textElement={'Activities'} />
