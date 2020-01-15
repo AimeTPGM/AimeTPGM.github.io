@@ -37,6 +37,7 @@ ul {
   color: #c29491;
 }
 .timeline > li {
+  cursor: pointer;
 }
 
 .timeline > li::before {
@@ -72,10 +73,12 @@ ul {
 }
 .timeline > li .role-wrapper > .role > .name {
   color: #772928;
+  padding-right: 10px;
 }
 .timeline > li .role-wrapper > .role > .period {
   font-size: 0.8em;
   margin-top: 5px;
 }
 .timeline > li .role-wrapper > .arrow-info {
+  color: #772928;
 }
