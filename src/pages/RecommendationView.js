@@ -2,11 +2,10 @@ import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 import { stringWithNewLine, mediaMaxWidth } from '../util/util';
-import { hilightBlueBackgroundColor, lowlightBlueBackgroundColor, masterHilightColor, colorScheme } from '../appConstant';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import MainHeader from '../components/MainHeader';
 import ViewContainer from '../components/ViewContainer';
+import { colorScheme } from '../appConstant';
 
 export default () => {
     const bgEleStyle = { fontSize: '50em', marginTop: '-270px', marginLeft: '-150px', [mediaMaxWidth(768)]: { fontSize: '40em', marginTop: '-180px', marginLeft: '-120px', } }
@@ -40,7 +39,7 @@ export default () => {
             mainHeaderText={'Recommendation'} 
             content={getContent()}
             footerText={'Activities'}
-            footerNavigate={'/activities'}
+            footerNavigate={'/activity'}
             />
     </div>)
 }

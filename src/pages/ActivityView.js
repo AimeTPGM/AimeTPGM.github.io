@@ -2,42 +2,26 @@ import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 import { stringWithNewLine, mediaMaxWidth } from '../util/util';
-import { lightMasterColor, lightBlue, masterLowlightColor, hilightBlueBackgroundColor, lowlightBlueBackgroundColor } from '../appConstant';
-import RolesView from './RolesView';
+import ViewContainer from '../components/ViewContainer';
 
-export default (props) => {
-    const { changePageFunc } = props;
-    const rolesPage = <RolesView changePageFunc={changePageFunc} />
+export default () => {
+    const bgEleStyle = { fontSize: '50em', marginTop: '-270px', marginLeft: '-150px', [mediaMaxWidth(768)]: { fontSize: '40em', marginTop: '-180px', marginLeft: '-120px', } }
+    
+    const getContent = () => {
+        return (<div>content</div>)
+    }
     return (<div>
-        <div onClick={() => {
-            changePageFunc(rolesPage)
-        }}
-        css={{ position: 'absolute', fontSize: '0.8em',right: '30px', padding: '0 20px', background: lowlightBlueBackgroundColor, border: `1px solid ${lightMasterColor}`, color: lightBlue, transition: '0.5s', cursor: 'pointer', ['&:hover']: { background: hilightBlueBackgroundColor, borderColor: 'white', color: 'white'}}}>
-            Back to Roles
-        </div>
-        <div css={{ paddingTop: '40px', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', textAlign: 'left'}}>
-            {volunteeringAndActivityList.map((item, index) => {
-                return (
-                    <div key={index} 
-                        css={{
-                            width: '100%',
-                            padding: '0 20px'
-                        }}>
-                        <div css={{ position: 'absolute', width: 'fit-content', fontWeight: '900', fontSize: '0.8em', padding: '0 20px', backgroundImage: 'linear-gradient(#ffcd40,#ab7600)', color: masterLowlightColor}}>
-                            {item.period}
-                            <div css={{ position: 'absolute', width: '27px', height: '27px', backgroundImage: 'linear-gradient(to bottom right,#ffcd40,#ab7600)', right: '-14px', top: '6px', transform: 'rotate(45deg)'}}></div>
-                        </div>
-                        <div css={{ color: 'rgba(255,255,255,0.8)', margin: '20px 0', border: '1px solid #ffd15a', padding: '40px 20px 20px 20px', overflow: 'scroll', background: '#0d253e', transition: '0.5s', ['&::-webkit-scrollbar']: { display: 'none'}, ['&:hover']: { background:'#1c518a', color: '#ffcd40' } }}>
-                            <div css={{ fontWeight: '900', fontSize: '1.2em', lineHeight: '1.2em'}}>{item.role}</div>
-                            <div css={{ fontSize: '0.8em', lineHeight: '1.2em', fontStyle: 'oblique', margin: '10px 0 20px 0'}}>@{item.organization}</div>
-                            <div css={{fontSize: '0.8em', lineHeight: '1.6em'}}>{stringWithNewLine(item.description)}</div>
-                        </div>
-                    </div>
-                );
-            })}
-        </div>
+        <ViewContainer 
+            bgLetter={'&'} 
+            bgEleStyle={bgEleStyle} 
+            mainHeaderText={'Activities'} 
+            content={getContent()}
+            footerText={'About Me'}
+            footerNavigate={'/aboutme'}
+            />
     </div>)
 }
+
 
 const volunteeringAndActivityList = [
     {

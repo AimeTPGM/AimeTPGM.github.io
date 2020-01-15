@@ -9,6 +9,9 @@ import { jsx, css } from '@emotion/core';
 import SummaryView from './pages/SummaryView';
 import { Route } from 'react-router-dom';
 import RecommendationView from './pages/RecommendationView';
+import ActivityView from './pages/ActivityView';
+import AboutMeView from './pages/AboutMeView';
+import WorkExperienceView from './pages/WorkExperienceView';
 
 class App extends Component {
   render() {
@@ -17,6 +20,9 @@ class App extends Component {
         <Route exact path="/" component={MainView} />
         <Route exact path="/summary" component={SummaryView} />
         <Route exact path="/recommendation" component={RecommendationView} />
+        <Route exact path="/activity" component={ActivityView} />
+        <Route exact path="/aboutme" component={AboutMeView} />
+        <Route exact path="/experience" component={WorkExperienceView} />
       </div>
     );
   }

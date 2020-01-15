@@ -7,6 +7,7 @@ import { timelineData } from '../data';
 import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ArrowCircle from './ArrowCircle';
+import { Link } from 'react-router-dom';
 
 export default () => {
     return (<div css={{
@@ -18,6 +19,7 @@ export default () => {
         {timelineData.map((item) => {
             return (<li>
                         <div class="year">{item.startYear}</div>
+                        <Link to="/experience">
                         {item.experiences.map((exp) => {
                             return (
                             <div>
@@ -30,6 +32,8 @@ export default () => {
                                 </div>
                             </div>)
                         })}
+                        </Link>
+                        
                     </li>
                     
             )
