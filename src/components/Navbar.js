@@ -16,7 +16,7 @@ export default () => {
 
     return (<div css={{ 
         [mediaMaxWidth(768)]: { fontSize: '1em' },
-        fontSize: '2em', display: 'flex', padding: '20px', alignItems: 'center', justifyContent: 'space-between'}}>
+        fontSize: '2em', display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
         <div css={{textTransform: 'uppercase'}}>
             <div>Pankamol</div><div>Srikaew</div>
         </div>

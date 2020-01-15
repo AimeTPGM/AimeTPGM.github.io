@@ -15,7 +15,6 @@
 
 .App {
   text-align: center;
-  overflow: hidden;
   font-family: Montserrat_BOLD;
 }
 
@@ -26,4 +25,57 @@ body {
 a {
   text-decoration: none;
   color: #772928;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.timeline {
+  color: #c29491;
+}
+.timeline > li {
+}
+
+.timeline > li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 2.5px solid #c29491;
+  position: absolute;
+  border-radius: 15px;
+  background: #f0eded;
+  margin-left: 50px;
+}
+.timeline > li:first-child::before {
+  background: #c29491;
+}
+.timeline > li > .year {
+  font-size: 0.8em;
+  position: absolute;
+}
+.timeline > li .role-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 56px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  border-left: 2.5px solid #c29491;
+}
+.timeline > li:last-child .role-wrapper {
+  border: 0;
+}
+.timeline > li .role-wrapper > .role {
+  margin-bottom: 30px;
+}
+.timeline > li .role-wrapper > .role > .name {
+  color: #772928;
+}
+.timeline > li .role-wrapper > .role > .period {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+.timeline > li .role-wrapper > .arrow-info {
 }
