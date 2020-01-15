@@ -31,6 +31,14 @@ export default () => {
                     </a>
                 </li>)
             })}
+
+            <li css={{ [mediaMaxWidth(768)]: { marginRight: '10px' }, marginRight: '20px', fontSize: '0.8em', alignSelf: 'center'}}>
+                    <a css={{
+                        }} 
+                        href={'https://aimetpgm.github.io/blog'} target="_blank">
+                        {'blog'}
+                    </a>
+                </li>
             </ul>
         </div>
     </div>);

@@ -6,6 +6,7 @@ import { mediaMaxWidth } from '../util/util';
 import { timelineData } from '../data';
 import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ArrowCircle from './ArrowCircle';
 
 export default () => {
     return (<div css={{
@@ -25,7 +26,7 @@ export default () => {
                                         <div class="name">{exp.name}</div>
                                         <div class="period">{exp.period}</div>
                                     </div>
-                                    <div class="arrow-info"><FontAwesomeIcon style={{ 'font-size': '1.5em'}} icon={faArrowAltCircleRight}/></div>
+                                    <ArrowCircle />
                                 </div>
                             </div>)
                         })}
