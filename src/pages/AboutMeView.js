@@ -16,12 +16,12 @@ export default () => {
                 <div>Pankamol Srikaew</div>
             </div>
             
-            <div css={{ color: colorScheme.secondaryTextColor}}>software developer from Thailand</div>
+            <div css={{ color: colorScheme.secondaryTextColor}}>Software Developer from Thailand</div>
             <div css={{fontFamily: 'Montserrat', marginTop: '70px', lineHeight: '1.6em'}}>
                 <div css={{ textIndent: '50px' }}>
-                    <div>I instensely passionate on development the full project life cycle from the start to delivery - and even standing by, available, 24/7 one week a month for project's production on-call to make sure that the application is still on function and never blocking the experiences of the users.</div>
-                    <div>Besides developing an application, I can say that I'm really a person who concerns and takes excellent software development culture and team's well-being seriously. I'm always glad to jump into the area that the team's needed somebody who dedicate to handle any issues that the team is encountering, improve our working process and facilitate my teammates to fully accomplish their task without worries.</div>
-                    <div>I also like to eat meat-meat and end the great day with an icecream everyday.</div>
+                    <div>I intensely passionate on development the full project life cycle from the start to delivery - and even standing by, available, 24/7 one week a month for project's production on-call to make sure that the application is still on function and never blocking the experiences of the users.</div>
+                    <div>Besides developing an application, I can say that I'm really a person who concerns and takes excellent software development culture and team's well-being seriously. I'm always glad to jump into the area that the team's needed somebody who dedicate to handle any issues they are encountering, improve our working process and facilitate my teammates to fully accomplish their task without worries.</div>
+                    <div>I also like to eat meat-meat and end the great day with an icecream.</div>
                     
                 </div>
                 <div css={{ marginTop: '30px'}}><span>If you're looking for a software developer with the skills I mentioned above, let's find out how I can contribute in your team.</span></div>
