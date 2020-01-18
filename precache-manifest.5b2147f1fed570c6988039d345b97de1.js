@@ -4,10 +4,6 @@ self.__precacheManifest = [
     "url": "/static/media/pankamol-srikaew-resume-2020.23be4869.pdf"
   },
   {
-    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
-    "url": "/static/media/logo.5d5d9eef.svg"
-  },
-  {
     "revision": "ee6539921d713482b8ccd4d0d23961bb",
     "url": "/static/media/Montserrat-Regular.ee653992.ttf"
   },
@@ -24,19 +20,19 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "f307929711490e2dcbf8",
-    "url": "/static/js/main.261ff5c2.chunk.js"
+    "revision": "0770fcef318ec94ba1a5",
+    "url": "/static/js/main.471cc56a.chunk.js"
   },
   {
-    "revision": "e38d7115fc9523027db5",
-    "url": "/static/js/2.d1ed2d58.chunk.js"
+    "revision": "66a9d5b34ba6812fd090",
+    "url": "/static/js/2.5bd48a5d.chunk.js"
   },
   {
-    "revision": "f307929711490e2dcbf8",
+    "revision": "0770fcef318ec94ba1a5",
     "url": "/static/css/main.c146faf0.chunk.css"
   },
   {
-    "revision": "d014d46fa3425302db0abd7ae6d6f7fd",
+    "revision": "9f657f9ec1dbe00cb8e7257d8f97e2a6",
     "url": "/index.html"
   }
 ];

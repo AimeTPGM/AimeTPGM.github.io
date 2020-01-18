@@ -1,16 +1,15 @@
 {
   "main.css": "/static/css/main.c146faf0.chunk.css",
-  "main.js": "/static/js/main.261ff5c2.chunk.js",
-  "main.js.map": "/static/js/main.261ff5c2.chunk.js.map",
+  "main.js": "/static/js/main.471cc56a.chunk.js",
+  "main.js.map": "/static/js/main.471cc56a.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
   "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.d1ed2d58.chunk.js": "/static/js/2.d1ed2d58.chunk.js",
-  "static/js/2.d1ed2d58.chunk.js.map": "/static/js/2.d1ed2d58.chunk.js.map",
+  "static/js/2.5bd48a5d.chunk.js": "/static/js/2.5bd48a5d.chunk.js",
+  "static/js/2.5bd48a5d.chunk.js.map": "/static/js/2.5bd48a5d.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.96087c03ae16a48ab43476b88719ec78.js": "/precache-manifest.96087c03ae16a48ab43476b88719ec78.js",
+  "precache-manifest.5b2147f1fed570c6988039d345b97de1.js": "/precache-manifest.5b2147f1fed570c6988039d345b97de1.js",
   "service-worker.js": "/service-worker.js",
   "static/css/main.c146faf0.chunk.css.map": "/static/css/main.c146faf0.chunk.css.map",
   "static/media/App.css": "/static/media/Montserrat-Regular.ee653992.ttf",
-  "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
   "static/media/pankamol-srikaew-resume-2020.pdf": "/static/media/pankamol-srikaew-resume-2020.23be4869.pdf"
 }
