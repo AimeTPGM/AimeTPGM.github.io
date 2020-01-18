@@ -1,12 +1,10 @@
 import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import Navbar from './Navbar';
-import BackgroundElement from './BackgroundElement';
-import MainHeader from './MainHeader';
-import Footer from './Footer';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons';
+import Navbar from '../components/Navbar';
+import BackgroundElement from '../components/BackgroundElement';
+import MainHeader from '../components/MainHeader';
+import Footer from '../components/Footer';
 
 export default (props) => {
     const { bgLetter, bgEleStyle, content, mainHeaderText, footerText, footerNavigate } = props;

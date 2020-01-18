@@ -38,15 +38,19 @@ export default () => {
             </div>
             </Link>
 
+            <Link to="/activity">
             <div>
                 <MainHeader textElement={'Activities'} />
                 <SubHeaderWithDesc headerText={'Seminar, Instructor, Volunteering'} />
             </div>
+            </Link>
 
+            <Link to="/aboutme">
             <div css={{paddingBottom: '50px'}}>
                 <MainHeader textElement={'About Me'} />
                 <SubHeaderWithDesc headerText={'Profile and contact'} />
             </div>
+            </Link>
             
             
             </div>

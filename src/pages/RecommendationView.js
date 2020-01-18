@@ -4,8 +4,8 @@ import { jsx, css } from '@emotion/core';
 import { stringWithNewLine, mediaMaxWidth } from '../util/util';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ViewContainer from '../components/ViewContainer';
 import { colorScheme } from '../appConstant';
+import ViewContainer from './ViewContainer';
 
 export default () => {
     const bgEleStyle = { fontSize: '50em', marginTop: '-270px', marginLeft: '-150px', [mediaMaxWidth(768)]: { fontSize: '40em', marginTop: '-180px', marginLeft: '-120px', } }
@@ -33,7 +33,7 @@ export default () => {
         </div>)
     }
     return (<div>
-        <ViewContainer 
+        <ViewContainer
             bgLetter={'X'} 
             bgEleStyle={bgEleStyle} 
             mainHeaderText={'Recommendation'} 

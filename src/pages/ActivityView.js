@@ -1,14 +1,30 @@
 import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { stringWithNewLine, mediaMaxWidth } from '../util/util';
-import ViewContainer from '../components/ViewContainer';
+import { mediaMaxWidth } from '../util/util';
+import ViewContainer from './ViewContainer';
+import { colorScheme } from '../appConstant';
 
 export default () => {
     const bgEleStyle = { fontSize: '50em', marginTop: '-270px', marginLeft: '-150px', [mediaMaxWidth(768)]: { fontSize: '40em', marginTop: '-180px', marginLeft: '-120px', } }
-    
+    const hrStyle = { width: '100%', background: colorScheme.primaryTextColor, height: '1px' }
     const getContent = () => {
-        return (<div>content</div>)
+        return (<div css={{ [mediaMaxWidth(768)]: { width: '100%' }, width: '40%', margin: 'auto'}}>
+            {volunteeringAndActivityList.map(item => {
+                return (<div css={{ padding: '10px'}}>
+                    <div css={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
+                        <hr css={{...hrStyle}} />
+                        <span css={{padding: '10px', width: '100%'}}>{item.period}</span>
+                        <hr css={{...hrStyle}} />
+                    </div>
+                    <div css={{ padding: '10px'}}>
+                        <div css={{ fontSize: '1.5em' }}>{item.role}</div>
+                        <div css={{ color: colorScheme.secondaryTextColor }}>@{item.organization}</div>
+                        <div css={{ marginTop: '50px', fontFamily: 'Montserrat', textIndent: '50px'}}>{item.description}</div>
+                    </div>
+                </div>)
+            })}
+        </div>)
     }
     return (<div>
         <ViewContainer 
