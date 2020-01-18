@@ -1,13 +1,10 @@
 import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { Link } from 'react-router-dom';
-import ArrowCircle from './ArrowCircle';
 import { colorScheme } from '../appConstant';
-import Arrow from './Arrow';
 import resume from '../assets/pankamol-srikaew-resume-2020.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFile, faFileArchive, faFilePdf } from '@fortawesome/free-regular-svg-icons';
+import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
 
 export default () => {
     return (

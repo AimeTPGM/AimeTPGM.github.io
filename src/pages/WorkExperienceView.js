@@ -1,8 +1,7 @@
 import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { stringWithNewLine, mediaMaxWidth } from '../util/util';
-import resume from '../assets/pankamol-srikaew-resume-2020.pdf';
+import { mediaMaxWidth } from '../util/util';
 import ViewContainer from './ViewContainer';
 
 export default () => {

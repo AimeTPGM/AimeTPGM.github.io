@@ -1,3 +1,6 @@
+import { faLinkedin, faGithub, faFacebook } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
+
 export const timelineData = [
     {
         startYear: '2020',
@@ -183,4 +186,11 @@ export const timelineData = [
 
         ]
     }
+]
+
+export const contact = [
+    { icon: faLinkedin, link: 'https://www.linkedin.com/in/aimetpgm/' },
+    { icon: faGithub, link: 'https://github.com/AimeTPGM' },
+    { icon: faFacebook, link: 'https://www.facebook.com/aimetpgm' },
+    { icon: faEnvelope, link: 'mailto:sr.pankamol@gmail.com?Subject=Hey!%20I%20found%20you%20from%20github%20page.'}
 ]

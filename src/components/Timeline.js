@@ -1,11 +1,8 @@
 import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { colorScheme } from '../appConstant';
 import { mediaMaxWidth } from '../util/util';
 import { timelineData } from '../data';
-import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ArrowCircle from './ArrowCircle';
 import { Link } from 'react-router-dom';
 
