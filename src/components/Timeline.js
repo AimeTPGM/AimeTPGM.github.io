@@ -16,20 +16,22 @@ export default () => {
         {timelineData.map((item, key) => {
             return (<li key={`timeline-data-${key}`}>
                         <div className="year">{item.startYear}</div>
-                        <Link to={`/experience/${item.id+1}`}>
+                        
                         {item.experiences.map((exp, key) => {
                             return (
-                            <div  key={`exp-data-${key}`}>
-                                <div className="role-wrapper">
-                                    <div className="role">
-                                        <div className="name">{exp.name}</div>
-                                        <div className="period">{exp.period}</div>
+                            <Link to={`/experience/${exp.id}`}>
+                                <div  key={`exp-data-${key}`}>
+                                    <div className="role-wrapper">
+                                        <div className="role">
+                                            <div className="name">{exp.name}</div>
+                                            <div className="period">{exp.period}</div>
+                                        </div>
+                                        <ArrowCircle />
                                     </div>
-                                    <ArrowCircle />
                                 </div>
-                            </div>)
+                            </Link>)
                         })}
-                        </Link>
+                        
                         
                     </li>
                     

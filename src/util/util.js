@@ -8,6 +8,6 @@ export const stringWithNewLine = (str, style) => {
     const pStyle = !!style ? style : {};
     const strs = str.split('\n')
     return strs.map(item => {
-        return (<p css={{ ...pStyle, textIndent: '50px'}}>{item}</p>); 
+        return (<p css={{ textIndent: '50px', ...pStyle}}>{item}</p>); 
         });
 }
