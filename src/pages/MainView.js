@@ -13,8 +13,8 @@ export default () => (
         textAlign: 'left',
         overflow: 'hidden'
     }}>
-        <div css={{ [mediaMaxWidth(768)]: { fontSize: '30em' }, position: 'absolute', zIndex: '1', fontSize: '40em', lineHeight: '85vh', color: colorScheme.secondaryBgColor, fontWeight: 'bold', marginLeft: '-50px'}}>{'{'}</div>
-        <div css={{ [mediaMaxWidth(768)]: { display: 'none', fontSize: '30em' }, position: 'absolute', zIndex: '1', right: 0, fontSize: '40em', lineHeight: '85vh', color: colorScheme.secondaryBgColor, fontWeight: 'bold', marginRight: '-50px'}}>{'}'}</div>
+        <div css={{ [mediaMaxWidth(768)]: { fontSize: '40em' }, position: 'absolute', zIndex: '1', fontSize: '50em', lineHeight: '85vh', color: colorScheme.secondaryBgColor, fontWeight: 'bold', marginLeft: '-50px'}}>{'{'}</div>
+        <div css={{ [mediaMaxWidth(768)]: { display: 'none', fontSize: '40em' }, position: 'absolute', zIndex: '1', right: 0, fontSize: '50em', lineHeight: '85vh', color: colorScheme.secondaryBgColor, fontWeight: 'bold', marginRight: '-50px'}}>{'}'}</div>
         <div css={{ 
             [mediaMaxWidth(768)]: { width: '60%', textAlign: 'left', marginTop: '30vh' }, 
             position: 'absolute', width: '50%', left: 0, right: 0, margin: 'auto', marginTop: '25vh', zIndex: 2, textAlign: 'center'}}>
