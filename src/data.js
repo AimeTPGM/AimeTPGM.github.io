@@ -6,7 +6,7 @@ export const workExp = [
         place: 'Allianz Technology, Bangkok, Thailand',
         name: 'Senior FullStack Developer',
         period: 'Jan 2019 - Present',
-        description: 'Frontend Refactoring Initiatives (React Native Redux Saga)\nRelease 3 Performance Testing (Jmeter)\nProduction on-call support\nRelease 4 App Submission to iOS App Store\nUX design proposal and UI Mockup for visualization\nworked with PO, BA and Team Lead in sprint planing and scrum of scrum planning\nInitialized ticket-go-thru session in the team for increasing the awareness and team\'s participation in planing\nLead scrum team in technical refinement session, sprint review and retrospectives.\nSupporting and ramping up new joiners in the team',
+        description: 'Frontend Refactoring Initiatives (React Native Redux Saga)\nRelease 3 Performance Testing (Jmeter)\nProduction on-call support\nRelease 4 App Submission to iOS App Store\nUX design proposal and UI Mockup for visualization\nworked with PO, BA and Team Lead in sprint planning and scrum of scrum planning\nInitialized ticket-go-thru session in the team for increasing the awareness and team\'s participation in planning\nLead scrum team in technical refinement session, sprint review and retrospectives.\nSupporting and ramping up new joiners in the team',
         tools: [ 
             {
                 skillName: 'Backend',

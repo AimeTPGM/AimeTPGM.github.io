@@ -3,7 +3,7 @@ import React from 'react';
 import { jsx, css } from '@emotion/core';
 import { mediaMaxWidth } from '../util/util';
 import { colorScheme } from '../appConstant';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import Arrow from '../components/Arrow';
 
 export default () => (

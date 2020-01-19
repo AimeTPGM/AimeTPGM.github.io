@@ -33,7 +33,7 @@ export default () => {
             mainHeaderText={'Activities'} 
             content={getContent()}
             footerText={'About Me'}
-            footerNavigate={'/aboutme'}
+            footerNavigate={'/aboutme#navbar'}
             />
     </div>)
 }

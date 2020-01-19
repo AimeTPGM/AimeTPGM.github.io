@@ -13,7 +13,7 @@ export default () => {
     const getContent = () => {
         return (<div css={{
             [mediaMaxWidth(768)]: {
-                padding: '0 20px'
+                padding: '0 10px'
             },
             padding: '0 300px'
         }}>
@@ -39,7 +39,7 @@ export default () => {
             mainHeaderText={'Recommendation'} 
             content={getContent()}
             footerText={'Activities'}
-            footerNavigate={'/activity'}
+            footerNavigate={'/activity#navbar'}
             />
     </div>)
 }

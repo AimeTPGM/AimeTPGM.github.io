@@ -4,7 +4,7 @@ import { jsx, css } from '@emotion/core';
 import { mediaMaxWidth } from '../util/util';
 import { timelineData } from '../data';
 import ArrowCircle from './ArrowCircle';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default () => {
     return (<div css={{
@@ -19,7 +19,7 @@ export default () => {
                         
                         {item.experiences.map((exp, key) => {
                             return (
-                            <Link to={`/experience/${exp.id}`}>
+                            <Link to={`/experience/${exp.id}#navbar`}>
                                 <div  key={`exp-data-${key}`}>
                                     <div className="role-wrapper">
                                         <div className="role">

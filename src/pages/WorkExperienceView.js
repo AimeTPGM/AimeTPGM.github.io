@@ -3,7 +3,8 @@ import React from 'react';
 import { jsx, css } from '@emotion/core';
 import { mediaMaxWidth, stringWithNewLine } from '../util/util';
 import ViewContainer from './ViewContainer';
-import { useParams, Redirect, Link } from 'react-router-dom';
+import { useParams, Redirect } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { workExp } from '../data';
 import { colorScheme } from '../appConstant';
 import SkillSetComponent from '../components/SkillSetComponent';
@@ -55,7 +56,7 @@ export default () => {
             mainHeaderText={getWorkAndExperiencesHeader()} 
             content={getContent()}
             footerText={'Recommendation'}
-            footerNavigate={'/recommendation'}
+            footerNavigate={'/recommendation#navbar'}
             />
     </div>)
 }

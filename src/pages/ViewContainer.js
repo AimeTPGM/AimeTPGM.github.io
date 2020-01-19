@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 import Navbar from '../components/Navbar';
@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 
 export default (props) => {
     const { bgLetter, bgEleStyle, content, mainHeaderText, footerText, footerNavigate } = props;
+
     return (<div css={{}}>
             <BackgroundElement letter={bgLetter} eleStyle={bgEleStyle} />
             <div css={{
@@ -16,12 +17,11 @@ export default (props) => {
                 textAlign: 'left',
                 position: 'relative',
                 zIndex: 1,
-                padding: '20px'
             }}>
             
             <Navbar />
 
-            <div>
+            <div css={{ padding: '20px' }}>
                 <MainHeader textElement={mainHeaderText} />
                 {content}
                 
