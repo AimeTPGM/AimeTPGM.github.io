@@ -1,5 +1,6 @@
 import { faLinkedin, faGithub, faFacebook } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
+import { faEnvelope, faFilePdf } from "@fortawesome/free-regular-svg-icons"
+import resume from './assets/pankamol-srikaew-resume-2020.pdf'
 
 export const workExp = [
     {
@@ -53,7 +54,7 @@ export const workExp = [
     {
         place: 'Kookmin University, Seoul, South Korea',
         name: 'Senior e-Government Laboratory Member',
-        period: 'Sep 2016 - Aug 2017',
+        period: 'Sept 2016 - Aug 2017',
         description : 'Teaching others laboratory members and interns to participate in the project through pair programming.',
         tools : [
             {
@@ -73,7 +74,7 @@ export const workExp = [
     {
         place: 'Kookmin University, Seoul, South Korea',
         name: 'e-Government Laboratory Member',
-        period: 'Sep 2015 - Aug 2016',
+        period: 'Sept 2015 - Aug 2016',
         description : 'Research on Microservice Architecture and full-stack developed a document management system for managing document flow in e-Government based on a module of ONNARA referring to Microservice Architecture including system requirement gathering, design, development, testing and deployment.',
         tools : [
             {
@@ -167,7 +168,7 @@ export const timelineData = [
                 id: 3,
                 place: 'Kookmin University, Seoul, South Korea',
                 name: 'Senior e-Government Laboratory Member',
-                period: 'Sep 2016 - Aug 2017',
+                period: 'Sept 2016 - Aug 2017',
             }
         ]
     },
@@ -177,7 +178,7 @@ export const timelineData = [
             {
                 place: 'Kookmin University, Seoul, South Korea',
                 name: 'e-Government Laboratory Member',
-                period: 'Sep 2015 - Aug 2016',
+                period: 'Sept 2015 - Aug 2016',
                 description : 'Research on Microservice Architecture and full-stack developed a document management system for managing document flow in e-Government based on a module of ONNARA referring to Microservice Architecture including system requirement gathering, design, development, testing and deployment.',
                 tools : [
                     {
@@ -203,7 +204,7 @@ export const timelineData = [
                 id: 4,
                 place: 'Kookmin University, Seoul, South Korea',
                 name: 'e-Government Laboratory Member',
-                period: 'Sep 2015 - Aug 2016',
+                period: 'Sept 2015 - Aug 2016',
             },
             {
                 id: 5,
@@ -237,5 +238,6 @@ export const contact = [
     { icon: faLinkedin, link: 'https://www.linkedin.com/in/aimetpgm/' },
     { icon: faGithub, link: 'https://github.com/AimeTPGM' },
     { icon: faFacebook, link: 'https://www.facebook.com/aimetpgm' },
-    { icon: faEnvelope, link: 'mailto:sr.pankamol@gmail.com?Subject=Hey!%20I%20found%20you%20from%20github%20page.'}
+    { icon: faEnvelope, link: 'mailto:sr.pankamol@gmail.com?Subject=Hey!%20I%20found%20you%20from%20github%20page.'},
+    { icon: faFilePdf, link: () => window.open(resume) }
 ]

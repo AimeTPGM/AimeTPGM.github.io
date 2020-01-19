@@ -13,8 +13,8 @@ export default () => (
         textAlign: 'left',
         overflow: 'hidden'
     }}>
-        <div css={{ position: 'absolute', zIndex: '1', fontSize: '40em', lineHeight: '85vh', color: colorScheme.secondaryBgColor, fontWeight: 'bold', marginLeft: '-50px'}}>{'{'}</div>
-        <div css={{ [mediaMaxWidth(768)]: { display: 'none' }, position: 'absolute', zIndex: '1', right: 0, fontSize: '40em', lineHeight: '85vh', color: colorScheme.secondaryBgColor, fontWeight: 'bold', marginRight: '-50px'}}>{'}'}</div>
+        <div css={{ [mediaMaxWidth(768)]: { fontSize: '30em' }, position: 'absolute', zIndex: '1', fontSize: '40em', lineHeight: '85vh', color: colorScheme.secondaryBgColor, fontWeight: 'bold', marginLeft: '-50px'}}>{'{'}</div>
+        <div css={{ [mediaMaxWidth(768)]: { display: 'none', fontSize: '30em' }, position: 'absolute', zIndex: '1', right: 0, fontSize: '40em', lineHeight: '85vh', color: colorScheme.secondaryBgColor, fontWeight: 'bold', marginRight: '-50px'}}>{'}'}</div>
         <div css={{ 
             [mediaMaxWidth(768)]: { width: '60%', textAlign: 'left', marginTop: '30vh' }, 
             position: 'absolute', width: '50%', left: 0, right: 0, margin: 'auto', marginTop: '25vh', zIndex: 2, textAlign: 'center'}}>
@@ -32,12 +32,6 @@ export default () => (
                     View my work <Arrow />
                 </div>
             </Link>
-
-            {/* <div 
-                onClick={() => { window.open(resume);}}
-                css={{fontsize: '2em', fontWeight: 'bold',  margin: 'auto', color: colorScheme.topicTextColor, padding: '10px 20px', border: '2px solid '+colorScheme.topicTextColor, width: 'fit-content', cursor: 'pointer'}}>
-                My Resume <Arrow />
-            </div> */}
         </div>
         
     </div>
