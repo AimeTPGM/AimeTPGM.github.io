@@ -5,9 +5,9 @@ import resume from './assets/pankamol-srikaew-resume-2020.pdf'
 export const workExp = [
     {
         place: 'Allianz Technology, Bangkok, Thailand',
-        name: 'Senior FullStack Developer',
+        name: 'Scrum Master & Senior FullStack Developer',
         period: 'Jan 2019 - Present',
-        description: 'Frontend Refactoring Initiatives (React Native Redux Saga)\nRelease 3 Performance Testing (Jmeter)\nProduction on-call support\nRelease 4 App Submission to iOS App Store\nUX design proposal and UI Mockup for visualization\nworked with PO, BA and Team Lead in sprint planning and scrum of scrum planning\nInitialized ticket-go-thru session in the team for increasing the awareness and team\'s participation in planning\nLead scrum team in technical refinement session, sprint review and retrospectives.\nSupporting and ramping up new joiners in the team',
+        description: '<*Scrum Master*>\n- manage team of 6-8 (Thais and Foreigners)\n- Initialize ticket-go-thru session in the team for increasing the awareness and team\'s participation in planing\n- Lead scrum team in technical refinement session, sprint review and retrospectives.\n- Supporting and ramping up new joiners in the team\n- works with PO, BA and Team Lead in sprint planning and scrum of scrum planing\n- Initiate Detail Refinement Checklist\n- extracting and list out the tasks based on business requirement analysis\n\n<*Technical Contribution*>\n- Frontend Refactoring Initiatives (React Native Redux Saga)\n- Release 3 Performance Testing (Jmeter)\n- 24/7 Production on-call support\n- App Submission to iOS App Store\n- Automatic Case Dispatching System integrated with ESRI System for UK Business Unit\n- PDF summary report generation with React Native\n- Mentor Junior Developer\n- Contribute in writting API and Web automate test script (robot framework)\n- Manual test followed test scenario written by QA\n- support QA testing\n\n<*Around Project Contribution*>\n- Volunteer for improving team\'s learning and self-development focus\n- improve team working process\n\n<*Opensource Contribution*>\nhttps://elect.thematter.co\n<*Tech event volunteer*>\nStupid Hackaton Thailand #3 Volunteering Staff',
         tools: [ 
             {
                 skillName: 'Backend',
@@ -144,7 +144,7 @@ export const timelineData = [
             {
                 id: 1,
                 place: 'Allianz Technology, Bangkok, Thailand',
-                name: 'Senior FullStack Developer',
+                name: 'Scrum Master & Senior FullStack Developer',
                 period: 'Jan 2019 - Present',
             }
         ]

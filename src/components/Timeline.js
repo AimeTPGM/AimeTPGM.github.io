@@ -24,6 +24,7 @@ export default () => {
                                     <div className="role-wrapper">
                                         <div className="role">
                                             <div className="name">{exp.name}</div>
+                                            <div className="place">{exp.place}</div>
                                             <div className="period">{exp.period}</div>
                                         </div>
                                         <ArrowCircle />
