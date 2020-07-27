@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.c146faf0.chunk.css",
-  "main.js": "/static/js/main.adac40d1.chunk.js",
-  "main.js.map": "/static/js/main.adac40d1.chunk.js.map",
+  "main.css": "/static/css/main.69a5dd63.chunk.css",
+  "main.js": "/static/js/main.5c184272.chunk.js",
+  "main.js.map": "/static/js/main.5c184272.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
   "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.46504504.chunk.js": "/static/js/2.46504504.chunk.js",
-  "static/js/2.46504504.chunk.js.map": "/static/js/2.46504504.chunk.js.map",
+  "static/js/2.4f535e69.chunk.js": "/static/js/2.4f535e69.chunk.js",
+  "static/js/2.4f535e69.chunk.js.map": "/static/js/2.4f535e69.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.7dc98b74c11ef45cf940d99c94dffc93.js": "/precache-manifest.7dc98b74c11ef45cf940d99c94dffc93.js",
+  "precache-manifest.69ad053b87f5423dcc3860864cf3f304.js": "/precache-manifest.69ad053b87f5423dcc3860864cf3f304.js",
   "service-worker.js": "/service-worker.js",
-  "static/css/main.c146faf0.chunk.css.map": "/static/css/main.c146faf0.chunk.css.map",
+  "static/css/main.69a5dd63.chunk.css.map": "/static/css/main.69a5dd63.chunk.css.map",
   "static/media/App.css": "/static/media/Montserrat-Regular.ee653992.ttf",
-  "static/media/pankamol-srikaew-resume-2020.pdf": "/static/media/pankamol-srikaew-resume-2020.640fefff.pdf"
+  "static/media/pankamol-srikaew-resume-2020.pdf": "/static/media/pankamol-srikaew-resume-2020.ff15c88d.pdf"
 }
